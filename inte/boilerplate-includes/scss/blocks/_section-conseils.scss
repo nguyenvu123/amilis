@@ -1,0 +1,41 @@
+.section-conseils {
+	.include-sub-title {
+		display: flex;
+	    align-items: center;
+	    justify-content: space-between;
+	    padding-bottom: 30px;
+	    .sub-title {
+			color: #434E59;	
+			font-size: 30px;	
+			font-weight: 300;
+			letter-spacing: 0.16px;
+			line-height: 33px;
+			text-align: left;
+	   		
+		}
+		.red-more {
+			padding: 10px 20px;
+			border: 1px solid #F26532;
+    		border-radius: 22px;
+		}
+	}
+	
+	.date {
+		color: #F26532;
+	    font-size: 14px;
+	    font-weight: 600;
+	    letter-spacing: 0.08px;
+	    line-height: 18px;
+	    margin-bottom: 20px;
+	}
+	.blog-item {
+		padding-top: 15px;
+		h3 {
+			font-size: 20px;
+			font-weight: 500;
+			letter-spacing: 0.11px;
+			line-height: 22px;
+			padding: 20px 10px;
+		}
+	}
+}

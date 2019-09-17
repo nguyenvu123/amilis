@@ -1,0 +1,364 @@
+0000.001 (0) Opened log file at time: Tue, 17 Sep 2019 02:33:35 +0000 on http://amelis.me
+0000.032 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.16.6.0 WP: 5.1.2 PHP: 5.6.31 (apache2handler, Windows NT DESKTOP-D40KPTI 6.2 build 9200 (Windows 8 Home Premium Edition) i586) MySQL: 10.1.25-MariaDB WPLANG: fr_FR Server: Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 34.3M | 35.3M) multisite: N openssl: OpenSSL 1.0.2k  26 Jan 2017 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.077 (0) Free space on disk containing Updraft's temporary directory: 253041.4 MB
+0000.123 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.195 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.308 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1568600795, seconds_ago=86821)
+0000.435 (0) Set semaphore last lock (fd) time to 2019-09-17 02:33:36
+0000.440 (0) Semaphore lock (fd) complete
+0000.743 (0) Backup run: resumption=0, nonce=d6b3e9d7ae0b, file_nonce=d6b3e9d7ae0b begun at=1568687615 (1s ago), job type=backup
+0000.852 (0) Scheduling a resumption (1) after 600 seconds (1568688216) in case this run gets aborted
+0001.051 (0) Checking if we have a zip executable available
+0001.164 (0) Creation of backups of directories: beginning
+0001.372 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0011.414 (0) Total entities for the zip file: 1114 directories, 6301 files (0 skipped as non-modified), 76.4 MB
+0011.483 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 2.0 seconds have passed since the last write (0 MB, 1 (1) files added so far); re-opening (prior size: 0 KB)
+0011.774 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 100 files added (on-disk size: 192.9 KB)
+0011.932 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 200 files added (on-disk size: 192.9 KB)
+0012.052 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 300 files added (on-disk size: 192.9 KB)
+0012.222 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 400 files added (on-disk size: 192.9 KB)
+0012.378 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 500 files added (on-disk size: 192.9 KB)
+0012.412 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.1 MB, 6301 files batched, 501 (502) added so far); re-opening (prior size: 192.9 KB)
+0017.917 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 600 files added (on-disk size: 3062.2 KB)
+0018.069 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 700 files added (on-disk size: 3062.2 KB)
+0018.222 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 800 files added (on-disk size: 3062.2 KB)
+0018.346 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 900 files added (on-disk size: 3062.2 KB)
+0018.462 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1000 files added (on-disk size: 3062.2 KB)
+0018.503 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (11.5 MB, 6301 files batched, 501 (1003) added so far); re-opening (prior size: 3062.2 KB)
+0025.794 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1100 files added (on-disk size: 6507.7 KB)
+0025.921 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1200 files added (on-disk size: 6507.7 KB)
+0026.095 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1300 files added (on-disk size: 6507.7 KB)
+0026.246 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1400 files added (on-disk size: 6507.7 KB)
+0026.440 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1500 files added (on-disk size: 6507.7 KB)
+0026.470 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (5 MB, 6301 files batched, 501 (1504) added so far); re-opening (prior size: 6507.7 KB)
+0032.327 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1600 files added (on-disk size: 7595.8 KB)
+0032.543 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1700 files added (on-disk size: 7595.8 KB)
+0032.726 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1800 files added (on-disk size: 7595.8 KB)
+0032.846 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 1900 files added (on-disk size: 7595.8 KB)
+0032.960 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2000 files added (on-disk size: 7595.8 KB)
+0032.971 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.7 MB, 6301 files batched, 501 (2005) added so far); re-opening (prior size: 7595.8 KB)
+0039.087 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2100 files added (on-disk size: 9065.5 KB)
+0039.232 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2200 files added (on-disk size: 9065.5 KB)
+0039.407 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2300 files added (on-disk size: 9065.5 KB)
+0039.550 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2400 files added (on-disk size: 9065.5 KB)
+0039.689 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2500 files added (on-disk size: 9065.5 KB)
+0039.709 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.1 MB, 6301 files batched, 501 (2506) added so far); re-opening (prior size: 9065.5 KB)
+0046.648 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2600 files added (on-disk size: 11649.2 KB)
+0046.800 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2700 files added (on-disk size: 11649.2 KB)
+0046.956 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2800 files added (on-disk size: 11649.2 KB)
+0047.159 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 2900 files added (on-disk size: 11649.2 KB)
+0047.385 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3000 files added (on-disk size: 11649.2 KB)
+0047.688 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.6 MB, 6301 files batched, 501 (3007) added so far); re-opening (prior size: 11649.2 KB)
+0054.602 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3100 files added (on-disk size: 12922.7 KB)
+0054.804 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3200 files added (on-disk size: 12922.7 KB)
+0055.028 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3300 files added (on-disk size: 12922.7 KB)
+0055.255 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3400 files added (on-disk size: 12922.7 KB)
+0055.435 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3500 files added (on-disk size: 12922.7 KB)
+0055.480 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.1 MB, 6301 files batched, 501 (3508) added so far); re-opening (prior size: 12922.7 KB)
+0061.001 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3600 files added (on-disk size: 13893.8 KB)
+0061.289 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3700 files added (on-disk size: 13893.8 KB)
+0061.494 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3800 files added (on-disk size: 13893.8 KB)
+0061.633 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 3900 files added (on-disk size: 13893.8 KB)
+0061.752 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4000 files added (on-disk size: 13893.8 KB)
+0061.782 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (1.7 MB, 6301 files batched, 501 (4009) added so far); re-opening (prior size: 13893.8 KB)
+0066.848 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4100 files added (on-disk size: 14550.4 KB)
+0066.975 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4200 files added (on-disk size: 14550.4 KB)
+0067.132 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4300 files added (on-disk size: 14550.4 KB)
+0067.310 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4400 files added (on-disk size: 14550.4 KB)
+0067.518 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4500 files added (on-disk size: 14550.4 KB)
+0067.564 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.7 MB, 6301 files batched, 501 (4510) added so far); re-opening (prior size: 14550.4 KB)
+0077.233 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4600 files added (on-disk size: 15635.1 KB)
+0077.363 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4700 files added (on-disk size: 15635.1 KB)
+0077.547 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4800 files added (on-disk size: 15635.1 KB)
+0077.697 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 4900 files added (on-disk size: 15635.1 KB)
+0077.842 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5000 files added (on-disk size: 15635.1 KB)
+0077.861 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.4 MB, 6301 files batched, 501 (5011) added so far); re-opening (prior size: 15635.1 KB)
+0083.190 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5100 files added (on-disk size: 16801.4 KB)
+0083.325 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5200 files added (on-disk size: 16801.4 KB)
+0083.458 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5300 files added (on-disk size: 16801.4 KB)
+0083.607 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5400 files added (on-disk size: 16801.4 KB)
+0083.758 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5500 files added (on-disk size: 16801.4 KB)
+0083.782 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (10.4 MB, 6301 files batched, 501 (5512) added so far); re-opening (prior size: 16801.4 KB)
+0090.990 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5600 files added (on-disk size: 19886.1 KB)
+0091.260 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5700 files added (on-disk size: 19886.1 KB)
+0091.442 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5800 files added (on-disk size: 19886.1 KB)
+0091.619 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 5900 files added (on-disk size: 19886.1 KB)
+0091.819 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 6000 files added (on-disk size: 19886.1 KB)
+0091.855 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 6301 files batched, 501 (6013) added so far); re-opening (prior size: 19886.1 KB)
+0098.139 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 6100 files added (on-disk size: 20801.2 KB)
+0098.336 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 6200 files added (on-disk size: 20801.2 KB)
+0098.490 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip.tmp: 6300 files added (on-disk size: 20801.2 KB)
+0102.919 (0) Created plugins zip (0) - 22360.9 KB in 101.5 s (220.3 KB/s) (sha1: 2c61f62321fbb945955a35b4068f464cd1555dc2, sha256: 41366d48026423f1c50a8870690951686c5616c620453607ecdda0dc80792716)
+0102.939 (0) Beginning creation of dump of themes (split every: 400 MB)
+0103.323 (0) Total entities for the zip file: 71 directories, 462 files (0 skipped as non-modified), 9.9 MB
+0103.394 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0103.503 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0103.630 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0103.737 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0108.707 (0) Created themes zip (0) - 7827 KB in 5.8 s (1360 KB/s) (sha1: 4fdd5ff6241892ac2fcc38659d28b9925f427555, sha256: c3ede99e625defdb93e260396adaf0679c89c44022f13ef5e05f3ff63a2b8b32)
+0108.725 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0108.764 (0) Looking for candidates to backup in: E:\program\xampp\htdocs\amelis/wp-content/uploads
+0108.768 (0) finding files: 2018: adding to list (1)
+0108.801 (0) finding files: 2019: adding to list (2)
+0108.806 (0) finding files: elementor: adding to list (3)
+0108.844 (0) finding files: resumes: adding to list (4)
+0108.848 (0) finding files: wp-migrate-db: adding to list (5)
+0108.890 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0110.528 (0) Total entities for the zip file: 380 directories, 2319 files (0 skipped as non-modified), 110.1 MB
+0110.591 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0110.677 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0110.762 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 300 files added (on-disk size: 0 KB)
+0110.829 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 400 files added (on-disk size: 0 KB)
+0110.930 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 500 files added (on-disk size: 0 KB)
+0110.957 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (8.9 MB, 2319 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0113.290 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 600 files added (on-disk size: 8907.4 KB)
+0113.635 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 700 files added (on-disk size: 8907.4 KB)
+0113.952 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 800 files added (on-disk size: 8907.4 KB)
+0114.352 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 900 files added (on-disk size: 8907.4 KB)
+0114.632 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1000 files added (on-disk size: 8907.4 KB)
+0114.692 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (15.1 MB, 2319 files batched, 501 (1002) added so far); re-opening (prior size: 8907.4 KB)
+0117.539 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1100 files added (on-disk size: 24240.7 KB)
+0117.647 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1200 files added (on-disk size: 24240.7 KB)
+0117.754 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1300 files added (on-disk size: 24240.7 KB)
+0117.826 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1400 files added (on-disk size: 24240.7 KB)
+0117.917 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1500 files added (on-disk size: 24240.7 KB)
+0117.944 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (17.1 MB, 2319 files batched, 501 (1503) added so far); re-opening (prior size: 24240.7 KB)
+0120.855 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1600 files added (on-disk size: 41623.6 KB)
+0120.974 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1700 files added (on-disk size: 41623.6 KB)
+0121.089 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1800 files added (on-disk size: 41623.6 KB)
+0121.180 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 1900 files added (on-disk size: 41623.6 KB)
+0121.276 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 2000 files added (on-disk size: 41623.6 KB)
+0121.320 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (14.8 MB, 2319 files batched, 501 (2004) added so far); re-opening (prior size: 41623.6 KB)
+0124.844 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 2100 files added (on-disk size: 55216.5 KB)
+0124.924 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.3 MB, 2319 files batched, 142 (2146) added so far); re-opening (prior size: 55216.5 KB)
+0128.932 (0) A useful amount of data was added after this amount of zip processing: 4.9 s (normalised: 4.8 s, rate: 5325.2 KB/s)
+0129.028 (0) Performance is good - will increase the amount of data we attempt to batch (time=4.8706068992615, normalised_time=4.80729964969, max_time=128.98027992249, data points known=1, old_max_bytes=26214400, new_max_bytes=209715200)
+0129.186 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 2200 files added (on-disk size: 78833.2 KB)
+0129.293 (0) Zip: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip.tmp: 2300 files added (on-disk size: 78833.2 KB)
+0134.459 (0) Created uploads zip (0) - 106025.2 KB in 25.6 s (4147.5 KB/s) (sha1: 00a8f2179d476edfcfbfa3e32bcc3ccf65967e83, sha256: b897ad50fd20a10306ef32080bda796fb7f514165f6013b1d27b81b0dc595a59)
+0134.514 (0) Beginning backup of other directories found in the content directory (index: 0)
+0134.518 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0134.522 (0) Looking for candidates to backup in: E:\program\xampp\htdocs\amelis/wp-content
+0134.557 (0) finding files: cache: skipping: excluded by options
+0134.569 (0) finding files: index.php: adding to list (1)
+0134.573 (0) finding files: languages: adding to list (2)
+0134.614 (0) finding files: mu-plugins: adding to list (3)
+0134.618 (0) finding files: plugins: skipping: this is the plugins directory
+0134.622 (0) finding files: themes: skipping: this is the themes directory
+0134.626 (0) finding files: updraft: skipping: this is the updraft directory
+0134.631 (0) finding files: upgrade: skipping: excluded by options
+0134.642 (0) finding files: uploads: skipping: this is the uploads directory
+0134.681 (0) Total entities for the zip file: 4 directories, 60 files (0 skipped as non-modified), 4.1 MB
+0136.239 (0) Created others zip (0) - 1184 KB in 1.6 s (744.5 KB/s) (sha1: 37be65ef69828daca1e1f6ffe28746f623731fa3, sha256: e56c0be2803910dd9801c779bae1ea2ea9f24068334e16ace0e6505eb7fc878b)
+0136.339 (0) Saving backup status to database (elements: 8)
+0136.459 (0) Beginning creation of database dump (WordPress DB)
+0136.735 (0) Table wp_options: Total expected rows (approximate): 397
+0136.901 (0) Table wp_options: Total rows added: 401 in 0.16 seconds
+0136.918 (0) Table wp_options: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_options.table.gz - 227.4 KB)
+0136.968 (0) Table wp_users: Total expected rows (approximate): 6
+0137.004 (0) Table wp_users: Total rows added: 6 in 0.01 seconds
+0137.060 (0) Table wp_users: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_users.table.gz - 1 KB)
+0137.132 (0) Table wp_usermeta: Total expected rows (approximate): 211
+0137.196 (0) Table wp_usermeta: Total rows added: 210 in 0.05 seconds
+0137.228 (0) Table wp_usermeta: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_usermeta.table.gz - 4.7 KB)
+0137.585 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0137.856 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0137.892 (0) Table wp_commentmeta: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0138.005 (0) Table wp_comments: Total expected rows (approximate): 0
+0138.038 (0) Table wp_comments: Total rows added: 0 in 0.01 seconds
+0138.081 (0) Table wp_comments: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_comments.table.gz - 0.5 KB)
+0138.173 (0) Table wp_links: Total expected rows (approximate): 0
+0138.207 (0) Table wp_links: Total rows added: 0 in 0.01 seconds
+0138.248 (0) Table wp_links: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_links.table.gz - 0.4 KB)
+0138.310 (0) Table wp_postmeta: Total expected rows (approximate): 55759
+0204.262 (0) Table wp_postmeta: Total rows added: 55971 in 65.92 seconds
+0204.336 (0) Table wp_postmeta: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_postmeta.table.gz - 5348.4 KB)
+0204.604 (0) Table wp_posts: Total expected rows (approximate): 4351
+0207.911 (0) Table wp_posts: Total rows added: 6563 in 3.26 seconds
+0207.994 (0) Table wp_posts: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_posts.table.gz - 2142.2 KB)
+0208.181 (0) Table wp_term_relationships: Total expected rows (approximate): 132
+0208.250 (0) Table wp_term_relationships: Total rows added: 132 in 0.04 seconds
+0208.279 (0) Table wp_term_relationships: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_term_relationships.table.gz - 0.8 KB)
+0208.389 (0) Table wp_term_taxonomy: Total expected rows (approximate): 9
+0208.439 (0) Table wp_term_taxonomy: Total rows added: 9 in 0.02 seconds
+0208.482 (0) Table wp_term_taxonomy: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_term_taxonomy.table.gz - 0.5 KB)
+0208.884 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0208.916 (0) Table wp_termmeta: Total rows added: 0 in 0.01 seconds
+0208.936 (0) Table wp_termmeta: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_termmeta.table.gz - 0.4 KB)
+0209.002 (0) Table wp_terms: Total expected rows (approximate): 9
+0209.012 (0) Table wp_terms: Total rows added: 9 in 0.01 seconds
+0209.050 (0) Table wp_terms: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_terms.table.gz - 0.5 KB)
+0209.155 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 2979
+0209.554 (0) Table wp_yoast_seo_links: Total rows added: 2999 in 0.37 seconds
+0209.603 (0) Table wp_yoast_seo_links: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_yoast_seo_links.table.gz - 25.4 KB)
+0209.737 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 1598
+0209.807 (0) Table wp_yoast_seo_meta: Total rows added: 1599 in 0.04 seconds
+0209.858 (0) Table wp_yoast_seo_meta: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_yoast_seo_meta.table.gz - 4.7 KB)
+0209.976 (0) Table wp_cities: Total expected rows (approximate): 0
+0210.154 (0) Table wp_cities: Total rows added: 0 in 0.01 seconds
+0210.186 (0) Table wp_cities: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_cities.table.gz - 0.4 KB)
+0210.258 (0) Table wp_devis: Total expected rows (approximate): 0
+0210.294 (0) Table wp_devis: Total rows added: 0 in 0.00 seconds
+0210.339 (0) Table wp_devis: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_devis.table.gz - 0.4 KB)
+0210.441 (0) Table wp_redirection_404: Total expected rows (approximate): 136
+0210.494 (0) Table wp_redirection_404: Total rows added: 145 in 0.03 seconds
+0210.529 (0) Table wp_redirection_404: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_404.table.gz - 2.2 KB)
+0210.600 (0) Table wp_redirection_groups: Total expected rows (approximate): 2
+0210.629 (0) Table wp_redirection_groups: Total rows added: 2 in 0.01 seconds
+0210.659 (0) Table wp_redirection_groups: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_groups.table.gz - 0.5 KB)
+0210.943 (0) Table wp_redirection_items: Total expected rows (approximate): 305
+0211.013 (0) Table wp_redirection_items: Total rows added: 305 in 0.04 seconds
+0211.059 (0) Table wp_redirection_items: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_items.table.gz - 8.8 KB)
+0211.441 (0) Table wp_redirection_logs: Total expected rows (approximate): 0
+0211.464 (0) Table wp_redirection_logs: Total rows added: 0 in 0.01 seconds
+0211.517 (0) Table wp_redirection_logs: finishing file (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_logs.table.gz - 0.4 KB)
+0211.640 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_options.table.gz (1/20): adding to final database dump
+0211.726 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_users.table.gz (2/20): adding to final database dump
+0211.750 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_usermeta.table.gz (3/20): adding to final database dump
+0211.781 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_commentmeta.table.gz (4/20): adding to final database dump
+0211.787 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_comments.table.gz (5/20): adding to final database dump
+0211.813 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_links.table.gz (6/20): adding to final database dump
+0211.818 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_postmeta.table.gz (7/20): adding to final database dump
+0213.521 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_posts.table.gz (8/20): adding to final database dump
+0214.270 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_term_relationships.table.gz (9/20): adding to final database dump
+0214.303 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_term_taxonomy.table.gz (10/20): adding to final database dump
+0214.308 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_termmeta.table.gz (11/20): adding to final database dump
+0214.334 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_terms.table.gz (12/20): adding to final database dump
+0214.367 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_yoast_seo_links.table.gz (13/20): adding to final database dump
+0214.410 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_yoast_seo_meta.table.gz (14/20): adding to final database dump
+0214.464 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_cities.table.gz (15/20): adding to final database dump
+0214.530 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_devis.table.gz (16/20): adding to final database dump
+0214.558 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_404.table.gz (17/20): adding to final database dump
+0214.590 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_groups.table.gz (18/20): adding to final database dump
+0214.623 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_items.table.gz (19/20): adding to final database dump
+0214.632 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db-table-wp_redirection_logs.table.gz (20/20): adding to final database dump
+0214.670 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz: finished writing out complete database file (7752 KB)
+0214.842 (0) Total database tables backed up: 20 (backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz, size: 7958870, sha256)
+0214.938 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0214.950 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0214.954 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0214.967 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-others.zip: others: This file has not yet been successfully uploaded: will queue
+0214.979 (0) backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz: db: This file has not yet been successfully uploaded: will queue
+0214.992 (0) Saving backup history. Total backup size: 141.8 MB
+0215.009 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0215.039 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0215.045 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-955a2e477f85d9969d84bb47732d4804)
+0217.649 (0) S3 upload (): backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip (chunks: 5) -> s3://amelis-services/backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip
+0218.807 (0) S3 chunked upload: got multipart ID: 2E0GFcfMo_0PNVTrzyA6OTWB5NRAYSOq6AT.zcBshHWdZfEZm4eVlWvj5TlO8KG7a8JJrGosGj85jqT4vutBaA--
+0239.417 (0) S3 chunked upload: 20 % uploaded (1, "837aa22a5b9d85346dd73afe2b2e574e")
+0259.891 (0) S3 chunked upload: 40 % uploaded (2, "3720455df6d1f1b0f912ae243945815d")
+0280.475 (0) S3 chunked upload: 60 % uploaded (3, "43d1e9b2bb5c80bad34ba14b5bb97dce")
+0300.711 (0) S3 chunked upload: 80 % uploaded (4, "abfcacde86612e1e53ecd8d49b9fce58")
+0308.649 (0) S3 chunked upload: 100 % uploaded (5, "2410b5110e49df685ca0aca5f4e9e00d")
+0308.729 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0309.156 (0) S3 upload (plugins0): re-assembly succeeded
+0309.194 (0) Recording as successfully uploaded: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip
+0309.231 (0) Deleting local file: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-plugins.zip: OK
+0309.259 (0) S3 upload (): backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip (chunks: 2) -> s3://amelis-services/backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip
+0309.580 (0) S3 chunked upload: got multipart ID: aEy_DnQmDvz._fSay.k0SCpawyKt36l.WIXjrruVbld9b.OmvXxRwOgIwAT_KKtd7A4yyl2W8IV3M42i_Npq6Q--
+0329.621 (0) S3 chunked upload: 50 % uploaded (1, "854bf7df0ec6ba6206e1f17a9c3c1f04")
+0341.051 (0) S3 chunked upload: 100 % uploaded (2, "4eb2eb8519b39c5d6ee7f56e8d0603a0")
+0341.135 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0341.459 (0) S3 upload (themes0): re-assembly succeeded
+0341.471 (0) Recording as successfully uploaded: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip
+0341.491 (0) Deleting local file: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-themes.zip: OK
+0341.503 (0) S3 upload (): backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip (chunks: 21) -> s3://amelis-services/backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip
+0341.759 (0) S3 chunked upload: got multipart ID: U4VytKvVVze.040EM4GzkK4bG.uAO0f7ni0oFQpBvDI3692rb2e6MVCG4UgHzPgaz6ZnrP4vwjqYPCstL5PbGg--
+0361.811 (0) S3 chunked upload: 4.8 % uploaded (1, "8469c0c8a9100d1cf6a8242ca0d14ea2")
+0381.886 (0) S3 chunked upload: 9.5 % uploaded (2, "c9cc3226d7af5c183bd837c212d65f27")
+0402.058 (0) S3 chunked upload: 14.3 % uploaded (3, "ed62919a13aa8d285287e898764b9854")
+0422.082 (0) S3 chunked upload: 19 % uploaded (4, "fe8e53fe8a1680eba743081b2e797067")
+0442.171 (0) S3 chunked upload: 23.8 % uploaded (5, "e2e6bbf8a97f27fe0e2b067ad853b664")
+0462.589 (0) S3 chunked upload: 28.6 % uploaded (6, "5a1572f2604ee66de80a855224de57bc")
+0483.741 (0) S3 chunked upload: 33.3 % uploaded (7, "43c07d126729df81c37040f8ff3930d9")
+0502.560 (0) S3 chunked upload: 38.1 % uploaded (8, "bcf7306f984ea2c6bec60fecade98e64")
+0521.855 (0) S3 chunked upload: 42.9 % uploaded (9, "89e8e0092a656e096197b085e212085b")
+0541.254 (0) S3 chunked upload: 47.6 % uploaded (10, "b646ea406b23d96fac43c5df8f27c633")
+0560.554 (0) The scheduled resumption is within 45 seconds - will reschedule
+0560.873 (0) Rescheduling resumption 1: moving to 645 seconds from now (1568688821)
+0561.085 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 600 + 45 = 645
+0561.169 (0) S3 chunked upload: 52.4 % uploaded (11, "782bd6d3a9519f44ab150484d7fa6441")
+0580.286 (0) S3 chunked upload: 57.1 % uploaded (12, "5c3a9c216c87254c07be2deb71ed435f")
+0599.449 (0) S3 chunked upload: 61.9 % uploaded (13, "49fd0445fd2c884658aa19f624d7c988")
+0618.356 (0) The time we have been running (618.2) is approaching the resumption interval (645) - increasing resumption interval to 649
+0618.505 (0) S3 chunked upload: 66.7 % uploaded (14, "00b5eeffdde216410fe696324be273f1")
+0637.270 (0) The time we have been running (637.2) is approaching the resumption interval (649) - increasing resumption interval to 668
+0637.320 (0) S3 chunked upload: 71.4 % uploaded (15, "7f860372ccaa3b28ee5f3ee14871e8a2")
+0656.045 (0) The time we have been running (655.9) is approaching the resumption interval (668) - increasing resumption interval to 686
+0656.111 (0) S3 chunked upload: 76.2 % uploaded (16, "060fc02125b7770a39536130d5af1d96")
+0675.111 (0) The time we have been running (675) is approaching the resumption interval (686) - increasing resumption interval to 705
+0675.176 (0) S3 chunked upload: 81 % uploaded (17, "584b116e0292f4afc30d922420e37959")
+0693.940 (0) The time we have been running (693.8) is approaching the resumption interval (705) - increasing resumption interval to 724
+0694.023 (0) S3 chunked upload: 85.7 % uploaded (18, "247c9fd31095afe54260e3d478f7ef08")
+0715.386 (0) The time we have been running (715.4) is approaching the resumption interval (724) - increasing resumption interval to 746
+0715.404 (0) S3 chunked upload: 90.5 % uploaded (19, "5bebade717a9bcc5e3d7edc372c1417f")
+0735.377 (0) The time we have been running (735.3) is approaching the resumption interval (746) - increasing resumption interval to 766
+0735.439 (0) S3 chunked upload: 95.2 % uploaded (20, "f77e85b13e4d6cb17ec5985f8374282e")
+0749.901 (0) The time we have been running (749.8) is approaching the resumption interval (766) - increasing resumption interval to 780
+0749.910 (0) S3 chunked upload: 100 % uploaded (21, "3d81f7264c65bc1553b43acb723235ce")
+0749.994 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0750.365 (0) S3 upload (uploads0): re-assembly succeeded
+0750.393 (0) Recording as successfully uploaded: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip
+0750.434 (0) Deleting local file: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-uploads.zip: OK
+0750.461 (0) S3 upload (): backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-others.zip (chunks: 1) -> s3://amelis-services/backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-others.zip
+0755.428 (0) S3 regular upload: success
+0755.452 (0) Recording as successfully uploaded: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-others.zip
+0755.518 (0) Deleting local file: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-others.zip: OK
+0755.552 (0) S3 upload (): backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz (chunks: 2) -> s3://amelis-services/backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz
+0755.819 (0) S3 chunked upload: got multipart ID: 9HU7alWlUw0u1zvMAo6CD4OLq3KHHNgiItmnkpSjrGQx0BzFcKFvFLXWCkEUx1lHi2n2FqXvXeSpaxFo8sVzEA--
+0775.851 (0) The time we have been running (775.7) is approaching the resumption interval (780) - increasing resumption interval to 806
+0775.898 (0) S3 chunked upload: 50 % uploaded (1, "9d172738a1b9077050afb0c10cf85553")
+0786.506 (0) The time we have been running (786.5) is approaching the resumption interval (806) - increasing resumption interval to 817
+0786.574 (0) S3 chunked upload: 100 % uploaded (2, "757d0937a0f40b35619156ddac27c605")
+0786.635 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0786.954 (0) S3 upload (db0): re-assembly succeeded
+0786.960 (0) Recording as successfully uploaded: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz
+0787.006 (0) Deleting local file: backup_2019-09-17-0433_Amelis_Groupe_Sodexo_d6b3e9d7ae0b-db.gz: OK
+0787.051 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0787.082 (0) Number of backup sets in history: 3; groups (db): 1
+0787.110 (0) Examining (for databases) backup set with group_id=0, nonce=d6b3e9d7ae0b, datestamp=1568687615 (Sep 17 2019 02:33:35)
+0787.122 (0) This backup set is the backup set just made, so will not be deleted.
+0787.122 (0) Examining (for databases) backup set with group_id=0, nonce=6de2b582665a, datestamp=1568600795 (Sep 16 2019 02:26:35)
+0787.122 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0787.193 (0) Examining (for databases) backup set with group_id=0, nonce=25a6460fddce, datestamp=1568347397 (Sep 13 2019 04:03:17)
+0787.193 (0) 1568347397: db: this set includes a database (backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-db.gz); db count is now 2
+0787.193 (0) 1568347397: db: over retain limit (2); will delete this database
+0787.194 (0) Delete file: backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-db.gz, service=s3
+0787.207 (0) S3: Delete remote: bucket=amelis-services, URI=backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-db.gz
+0787.494 (0) The time we have been running (787.5) is approaching the resumption interval (817) - increasing resumption interval to 818
+0787.513 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0787.525 (0) Number of backup sets in history: 3; groups (files): 1
+0787.530 (0) Examining (for files) backup set with nonce=d6b3e9d7ae0b, datestamp=1568687615 (Sep 17 2019 02:33:35)
+0787.531 (0) This backup set is the backup set just made, so will not be deleted.
+0787.535 (0) This backup set is the backup set just made, so will not be deleted.
+0787.535 (0) This backup set is the backup set just made, so will not be deleted.
+0787.535 (0) This backup set is the backup set just made, so will not be deleted.
+0787.535 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0787.547 (0) Examining (for files) backup set with nonce=6de2b582665a, datestamp=1568600795 (Sep 16 2019 02:26:35)
+0787.547 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0787.548 (0) Examining (for files) backup set with nonce=25a6460fddce, datestamp=1568347397 (Sep 13 2019 04:03:17)
+0787.548 (0) plugins: over retain limit (2); will delete this file entity
+0787.548 (0) themes: over retain limit (2); will delete this file entity
+0787.548 (0) uploads: over retain limit (2); will delete this file entity
+0787.548 (0) others: over retain limit (2); will delete this file entity
+0787.548 (0) Delete file: backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-plugins.zip, service=s3
+0787.575 (0) Delete file: backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-themes.zip, service=s3
+0787.581 (0) Delete file: backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-uploads.zip, service=s3
+0787.585 (0) Delete file: backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-others.zip, service=s3
+0787.610 (0) S3: Delete remote: bucket=amelis-services, URI=backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-plugins.zip
+0787.910 (0) S3: Delete remote: bucket=amelis-services, URI=backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-themes.zip
+0788.219 (0) S3: Delete remote: bucket=amelis-services, URI=backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-uploads.zip
+0788.516 (0) S3: Delete remote: bucket=amelis-services, URI=backup_2019-09-13-0603_Amelis_Groupe_Sodexo_25a6460fddce-others.zip
+0788.843 (0) The time we have been running (788.8) is approaching the resumption interval (818) - increasing resumption interval to 819
+0788.888 (0) This backup set is now empty; will remove from history
+0788.915 (0) Deleting log file (log.25a6460fddce.txt)
+0788.923 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0789.011 (0) Resume backup (d6b3e9d7ae0b, 0): finish run
+0789.112 (0) Decremented the semaphore (fd) by 1
+0789.128 (0) Semaphore (fd) unlocked
+0789.171 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0789.249 (0) The backup apparently succeeded and is now complete
+0789.264 (0) Fetching RSS news feed
+0790.060 (0) Fetched RSS news feed; result is a: SimplePie
+0790.442 (0) Sending email ('Fichiers et base de données (Sauvegarde complète)') report (attachments: 0, size: 0 KB) to: conta...
+0792.514 (0) La sauvegarde a réussie. Elle est maintenant terminée.

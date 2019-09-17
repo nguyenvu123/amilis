@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------
+[Table of contents]
+
+-------------------------------------------------------------------*/
+
+/*=========================================================================
+== Vendor
+=========================================================================*/
+@import 'scss/vendor/owl/owl.carousel';
+@import 'scss/vendor/owl/owl.theme.default';
+
+@import 'scss/vendor/autocomplete';
+
+
+
+/*=========================================================================
+== Base styles
+=========================================================================*/
+@import 'scss/base/variables';
+@import 'scss/base/mixins';
+@import 'scss/base/grid';
+@import 'scss/base/typography';
+@import 'scss/base/flex';
+@import 'scss/base/grid-framework';
+@import 'scss/base/display';
+
+@import 'scss/base/common';
+
+
+
+/*=========================================================================
+== Components
+=========================================================================*/
+@import 'scss/components/header';
+@import 'scss/components/navbar';
+@import 'scss/components/footer';
+
+@import 'scss/components/breadcrumb'; 
+@import 'scss/components/buttons';
+@import 'scss/components/forms';
+
+
+@import 'scss/components/prestation-item';
+
+
+
+/*=========================================================================
+== Pages
+=========================================================================*/
+@import 'scss/pages/homepage';
+
+@import 'scss/pages/trouver';
+@import 'scss/pages/agence';
+@import 'scss/pages/devis-gratuit';
+
+@import 'scss/pages/post';
+@import 'scss/pages/search';
+
+@import 'scss/pages/services';
+@import 'scss/pages/auxiliaire';
+@import 'scss/pages/apa';
+@import 'scss/pages/faq';
+

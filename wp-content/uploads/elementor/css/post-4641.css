@@ -1,0 +1,16 @@
+.elementor-4641 .elementor-element.elementor-element-8985a77{padding:84px 0px 0px 0px;}.elementor-4641 .elementor-element.elementor-element-219dfa1 .elementor-text-editor{text-align:left;}.elementor-4641 .elementor-element.elementor-element-d5d227c{padding:24px 0px 84px 0px;}@media(max-width:767px){.elementor-4641 .elementor-element.elementor-element-8985a77{padding:48px 0px 0px 0px;}.elementor-4641 .elementor-element.elementor-element-8cc77c7 .elementor-heading-title{font-size:24px;}.elementor-4641 .elementor-element.elementor-element-d5d227c{padding:48px 0px 48px 0px;}}/* Start custom CSS for text-editor, class: .elementor-element-2b83e66 */table tr .head {
+    background-color: #f4f2f2;
+}
+
+tr .head.borderless {
+    border-top: none;
+}
+
+table tr .borderless {
+    border-bottom: none;
+    background-color: #f4f2f2;
+}
+
+table {
+    border-collapse: collapse;
+}/* End custom CSS */

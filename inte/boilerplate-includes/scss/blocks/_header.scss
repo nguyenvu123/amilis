@@ -1,0 +1,143 @@
+header  {
+    .row-top {
+        display: flex;
+        justify-content: space-between;
+        .logo-holder {
+            display: inline-block;
+        }
+        .header__navigation {
+        width: 100%;
+            #menu-primary-menu {
+                display: flex;
+                justify-content: flex-end;
+                 li {
+                    list-style: none;
+                     padding: 10px 10px;
+                     cursor: pointer;
+
+                     a {
+                         font-size: 16px;
+                         font-weight: 500;
+                         line-height: 18px;
+                         text-decoration: none;
+                         color: $color2;
+                         &:hover {
+                             color: $main-color;
+                             transition: all .3s;
+                         }
+
+                     }
+                     &:hover {
+
+
+                         .dropdown-wrapper {
+                             display: block;
+                             min-width: 250px;
+                             left: 50%;
+                             transform: translateX(-50%);
+                             .dropdown-menu {
+                                 &:before {
+                                     content: "";
+                                     position: absolute;
+                                     width: 30px;
+                                     height: 30px;
+                                     background-color: #f7f7f7;
+                                     top: 7px;
+                                     left: 50%;
+                                     border-radius: 3px;
+                                     transform: rotate(45deg) translateX(-50%);
+                                 }
+                             }
+                         }
+                     }
+                 }
+                > li {
+                    position: relative;
+                    //&:hover {
+                    //    &:after {
+                    //        content: '';
+                    //        width:0px;
+                    //        height:0px;
+                    //        border-left:50px solid transparent;
+                    //        border-right:50px solid transparent;
+                    //        border-top:50px solid #2f2f2f;
+                    //    }
+                    //}
+                }
+
+            }
+            .dropdown-wrapper {
+                display: none; //submemu none tạm thời
+                position: absolute;
+                background-color: #f7f7f7;
+                margin-top: 10px;
+                z-index: 1;
+                &:hover {
+                    display: block;
+
+                }
+                .dropdown-menu {
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    li {
+                        text-align: left;
+                    }
+                }
+
+            }
+            .include-menu {
+                margin-top: 60px;
+                .navigation {
+                    padding-right: 40px;
+                }
+                position: relative;
+                .search-container-2 {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    .search-control {
+                        transform: translateX(171px);
+                        visibility: hidden;
+                    }
+                    button {
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+
+                    }
+                    i {
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+
+    }
+    .phone-header {
+        background: $main-color;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 0 0 4px 4px;
+        .phone-holder {
+            display: flex;
+            padding: 10px 15px;
+            .numner-phone {
+                color: $color-white;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.09px;
+                line-height: 18px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+            .text {
+                color: $color-white;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.service-template-default, .post-type-archive-service {
+    .section-hero {
+        margin-top: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.elementor-row {
+    .services-item {
+        position: relative;
+        .elementor-widget-wrap {
+            border: 1px solid rgba(black, .1);
+            border-radius: 6px;
+        }
+        .elementor-image {
+            &:after {
+                content:"";
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba($color-primary, .2);
+                opacity: 0;
+                transition: all .2s ease-in-out;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+        }
+        &:hover {
+            .elementor-image {
+                &:after {
+                    opacity: 1;
+                }
+            }
+            .elementor-widget-wrap {
+                cursor: pointer;
+                border-color: $color-primary;
+            }
+        }
+    }
+}
+
+.elementor-row {
+    .frame-item {
+        position: relative;
+        .elementor-widget-wrap {
+            border: 1px solid rgba(black, .1);
+            border-radius: 6px;
+        }
+        &.icon {
+            &:hover {
+                .elementor-widget-wrap {
+                    border-color: $color-primary;
+                    svg {
+                        fill: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-aide-au-lever-coucher {
+    .section-hero {
+        background-position: 100% 0%;
+        background-repeat: no-repeat;
+        @media screen and (max-width: $screen-xs-max) {
+            background-position: 82% -21px;
+            background-size: 850px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.section {
+    &.service-details {
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: $screen-xs-max) {
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.section-prestation {
+    background: #f8f9fa;
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.prestation-holder {
+    display: flex;
+    padding: 0 20px;
+
+    .item {
+        flex: 1;
+    }
+
+    .img-holder {
+
+    }
+
+}
+
+
+
+.section-fonctionnement {
+    padding: 140px 0;
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        @media screen and (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+    }
+
+    .fonctionnement-step {
+        font-size: 18px;
+        display: block;
+        float: left;
+        position: relative;
+        text-align: center;
+
+        .step-number {
+            color: #dce0e5;
+            font-size: 72px;
+            display: block;
+        }
+
+        .step-description {
+            display: block;
+            min-height: 50px;
+            font-weight: 100;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+
+        .image-holder {
+            position: absolute;
+            top: 25%;
+            right: -10%;
+        }
+
+    }
+}
+
+.section-financement {
+    background-color: #f8f9fa;
+    padding: 140px 0;
+
+    .financement-items {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom: 20px;
+        @media screen and (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+    }
+
+    .icon {
+        height: auto;
+        width:100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+}
+
+.service-testimonials {
+    background: #fdfdfe;
+}
+
+.testimonials-carousel {
+    .item {
+        padding: 0 34px;
+    }
+}
+
+.testimonial-person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    .img-holder {
+        max-width: 100%;
+        @media screen and (max-width: $screen-xs-max){
+            max-width: 72px;
+        }
+    }
+    .testimonial-person__details {
+        margin-left: 24px;
+        .testimonial-person__details__name {
+            color: $color-primary;
+            font-size: 18px;
+        }
+    }
+}

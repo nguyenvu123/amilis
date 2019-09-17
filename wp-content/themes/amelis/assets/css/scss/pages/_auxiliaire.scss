@@ -1,0 +1,77 @@
+.page-auxiliaire {
+
+    .section-hero {
+        height: 250px;
+        margin-top: 0;
+        background-position: 100% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: $screen-xs-max) {
+            height: 200px;
+            background-position: 74% 0%;
+        }
+    }
+
+}
+
+
+.section-auxiliaire-raisons {
+    background: #f8f9fa;
+
+    .raisons-holder {
+        display: flex;
+        @media screen and (max-width: $screen-xs-max) {
+            flex-direction: column;
+        }
+    }
+
+    .raison-item {
+        display: flex;
+        flex: 1;
+        text-align: center;
+        flex-direction: column;
+
+        @media screen and (max-width: $screen-xs-max) {
+            flex-direction: row;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .raison-item__details {
+            margin-left: 12px;
+        }
+        .icon {
+            text-align: center;
+            img {
+                @media screen and (max-width: $screen-xs-max) {
+                    max-width: 48px;
+                }
+            }
+        }
+
+        h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.section-auxiliaire-personalite {
+    p {
+        padding-bottom: 20px;
+        span {
+            font-weight: 500;
+        }
+        @media screen and (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+    }
+
+}

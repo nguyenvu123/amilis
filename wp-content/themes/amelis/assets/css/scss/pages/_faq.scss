@@ -1,0 +1,76 @@
+
+.faq-icon {
+  margin-right: 16px;
+}
+
+.faq-question {
+  position: relative;
+  top: 25%;
+  padding-right: 25px;
+  font-weight: 600;
+  @media screen and (max-width: $screen-xs-max) {
+    top: 0;
+    position: relative;
+  }
+  &:before {
+    content: "●";
+    margin-right: 15px;
+    @media screen and (max-width: $screen-xs-max) {
+      display: none;
+    }
+  }
+}
+
+.post-type-archive-faq {
+  .hero-section {
+    .bg-image {
+      background-position: center;
+      background-size: cover;
+      @media screen and (max-width: $screen-xs-max) {
+        background-position: 63% center;
+      }
+    }
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 243px;
+      @media screen and (max-width: $screen-xs-max) {
+        height: 199px;
+      }
+      .hero-title {
+        font-size: 28px;
+        font-weight: 500;
+        @media screen and (max-width: $screen-xs-max) {
+          font-size: 21px;
+        }
+      }
+    }
+  }
+
+  .tab-pane .btn-link {
+    @media screen and (max-width: $screen-xs-max) {
+      text-decoration: none;
+      padding: 12px 35px 12px 8px;
+    }
+  }
+}
+
+
+.tab-pane .btn-link:after {
+  content: "";
+  display: inline-block;
+  font-style: normal;
+  width: 8px !important;
+  height: 8px !important;
+  border-right: 1px solid #666;
+  border-top: 1px solid #666;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.tab-pane .btn-link[aria-expanded="true"]:after {
+  transform: rotate(315deg)
+}

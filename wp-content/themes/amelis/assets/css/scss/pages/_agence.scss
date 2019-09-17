@@ -1,0 +1,291 @@
+.single-map {
+    @include border-radius(4px);
+    border: solid 1px #eee;
+}
+
+#map-small {
+    height: 300px;
+    @include border-radius(4px);
+    border: solid 1px #eee;
+}
+
+.agence-image {
+    height: 92px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.agence-info {
+    // @include linear-gradient(to bottom, #f9f9f9, rgba(240, 241, 242, 0.75));
+    padding-top: 40px;
+
+    @media screen and (max-width: $screen-xs-max) {
+        padding-top: 8px;
+    }
+
+    h1 {
+        color: #a2adb9;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.25;
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #EAEAEA;
+        }
+    }
+
+
+    .h1-description {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.25;
+        color: $color-dark;
+        padding-bottom: 24px;
+        display: block;
+        text-transform: uppercase;
+        @media screen and (max-width: $screen-xs-max) {
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 8px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        padding-bottom: 24px;
+    }
+
+    p.zones-desservies {
+        font-size: 16px;
+    }
+
+    .img-holder {
+        width: 120px;
+        height: 120px;
+        float: left;
+        overflow: hidden;
+        margin-right: 25px;
+        @include border-radius(60px);
+    }
+    .director-info {
+        padding-top: 30px;
+
+        h4 {
+            color: $color-primary;
+            font-size: 18px;
+            font-weight: 500px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .btn {
+        margin-right: 30px;
+
+        &:hover {
+            margin-right: 20px !important;
+        }
+    }
+
+    @media screen and (max-width: $screen-xs-max) {
+        .btn {
+            margin-bottom: 15px;
+            margin-right: auto !important;
+            display: block;
+            width: 100%;
+
+            &:hover {
+                margin: 0 auto 15px auto !important;
+            }
+        }
+    }
+    .col-sm-7.bg-white {
+        background-color: inherit;
+        @media screen and (max-width: $screen-xs-max) {
+            background-color: white;
+        }
+
+    }
+
+}
+
+.agence-info__part2 {
+    background-color: #F9F9F9;
+    padding: 40px 0 72px 0;
+    .go-down {
+        bottom: auto;
+    }
+}
+
+
+.agence-contact {
+  @include border-radius(6px);
+  background-color: #ffffff;
+  box-shadow: 0 21px 38px 0 rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  width: 100%;
+  max-width: 390px;
+  float: right;
+
+  p {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        span {
+          position: relative;
+      }
+  }
+
+  .item {
+      padding-bottom: 10px;
+
+      img {
+          vertical-align: middle;
+          margin-right: 15px;
+          margin-left: 10px;
+      }
+
+      p {
+          padding-bottom: 15px;
+      }
+      .agence-contact__address {
+          padding-bottom: 0;
+      }
+  }
+
+  a {
+      color: $color-url;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+  }
+
+  .title-description {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.25;
+    color: $color-lighter;
+    display: block;
+  }
+}
+
+
+.agence-prestation {
+    padding: 72px 0px;
+
+    .items-holder {
+        display: flex;
+    }
+
+    @media screen and (max-width: $screen-xs-max)  {
+        .items-holder {
+            display: block;
+        }
+    }
+}
+
+
+
+.agence-equipe {
+    background-color: #f8f9fa;
+    padding: 72px 0;
+
+    .member-item {
+        text-align: center;
+    }
+
+    .img-holder {
+        width: 120px;
+        height: 120px;
+        @include border-radius(60px);
+        margin: 0 auto 10px auto;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+
+    .part-of-team {
+        p {
+            font-size: 20px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.agence-contact.visible-xs {
+    padding: 0;
+    box-shadow: none;
+}
+
+.zones-desservies-container {
+    .visible-xs {
+        .select-style {
+            padding: 6px 10px;
+            border: solid 1px #bfc7cf;
+        }
+        .zones {
+            padding: 6px 10px;
+            display: none;
+        }
+    }
+}
+
+.background-map {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.agence-info__sidebar {
+    position: absolute;
+}
+
+.testimonials-carousel p {
+    @media screen and (max-width: $screen-xs-max) {
+        padding: 20px;
+    }
+}
+
+.agence-contact__address {
+    display: flex;
+    align-items: center;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .agence-contact__address__street, .agence-contact__address__zipcode-city {
+        display: flex;
+    }
+}

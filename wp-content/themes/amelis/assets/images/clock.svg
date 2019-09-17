@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Component/Icons/Fi2tone-outlines/Clock</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbol-Instance-Sheet-[Current-Document]" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component/Icons/Fi2tone-outlines/Clock" transform="translate(-1.000000, -1.000000)" fill="#434E59">
+            <g id="icon-/-clock" transform="translate(1.000000, 1.000000)">
+                <path d="M11,0 C4.9,0 0,4.9 0,11 C0,17.1 4.9,22 11,22 C17.1,22 22,17.1 22,11 C22,4.9 17.1,0 11,0 Z M11,20 C6,20 2,16 2,11 C2,6 6,2 11,2 C16,2 20,6 20,11 C20,16 16,20 11,20 Z" id="Mask" fill-rule="nonzero"></path>
+                <path d="M14.7,13.3 C15.1,13.7 15.1,14.3 14.7,14.7 C14.5,14.9 14.3,15 14,15 C13.7,15 13.5,14.9 13.3,14.7 L10.3,11.7 C10.1,11.5 10,11.3 10,11 L10,5 C10,4.4 10.4,4 11,4 C11.6,4 12,4.4 12,5 L12,10.6 L14.7,13.3 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

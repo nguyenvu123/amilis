@@ -1,0 +1,63 @@
+.section-engagements {
+	padding-top: 130px;
+	.description {
+		color: $color4;
+	    font-size: 14px;
+	    font-weight: 500;
+	    letter-spacing: 0.08px;
+	    line-height: 22px;
+	    text-align: left;
+	    margin-bottom: 100px;
+	}
+	.item {
+		margin-bottom: 60px;
+		position: relative;
+		transition: all .3s;
+		&:hover {
+			.text-link {
+				color: $main-color;
+				
+			}
+			.text {
+				border-bottom: 1px solid #DC3B05;
+			}
+			p {
+				color: $color2;
+			}
+		}
+		.hover-section {
+			position: absolute;
+		    top: 0;
+		    right: 0;
+		    left: 0;
+		    bottom: 0;
+
+		}
+		.text-link {
+			color: $color2;
+		    font-size: 18px;
+		    font-weight: 500;
+		    letter-spacing: 0.1px;
+		    line-height: 20px;
+		    margin-bottom: 15px;
+		}
+		p {
+			color: $color4;
+			font-size: 15px;
+			font-weight: 600;
+			letter-spacing: 0.08px;
+			line-height: 19px;
+			padding-left: 65px;
+		}
+		span.number {
+			padding-right: 40px;
+		}
+	}
+	.col-4 {
+		img {
+			-webkit-box-shadow: -44px 38px 0px -16px rgba(251,235,230,1);
+			-moz-box-shadow: -44px 38px 0px -16px rgba(251,235,230,1);
+			box-shadow: -44px 38px 0px -16px rgba(251,235,230,1);
+		}
+	}
+}

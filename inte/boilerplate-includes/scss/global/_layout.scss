@@ -1,0 +1,162 @@
+body {
+    margin-top: 0;
+}
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+.row {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+    @include clearfix;
+}
+
+.container {
+    width: 100%; 
+    max-width: 1174px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+.container-wide {
+    width: 100%; 
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    
+}
+
+#main-content {
+    position: relative;
+    margin-top: 80px;
+    @media screen and (min-width: $tablet-large) {
+        opacity: 0;
+    }
+    &.active-animation {
+        opacity: 1;
+    }
+    @media screen and (min-width: $tablet-large) {
+        margin-top: 140px;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+
+.hidden-mobile {
+    display: none !important;
+    @media screen and (min-width: $mobile-large) {
+        display: block !important;
+    }
+}
+
+.show-mobile {
+    @media screen and (min-width: $mobile-large) {
+        display: none !important;
+    }
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.padding-right-0 {
+    padding-right: 0 !important;
+}
+
+.padding-left-0 {
+    padding-left: 0 !important;
+}
+
+
+
+/* Grid
+----------------------------------------------------------------------------------------------------*/
+
+[class*='col-'] {
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include clearfix;
+  
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $mobile-large) {
+        float: left;
+
+        &:last-child {
+            // margin-bottom: $value-1;
+        }
+    }
+
+}
+
+
+@for $i from 1 through 12 {
+    .col-always-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@media screen and (min-width: $mobile-large) {
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@for $i from 1 through 12 {
+    .col-sm-#{$i} {
+        width: 100% / 12 * $i;
+    }
+}
+
+@media screen and (min-width: $mobile-large) {
+    @for $i from 1 through 12 {
+        .col-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}
+
+@media screen and (min-width: $mobile-large) { 
+    @for $i from 1 through 12 {
+        .grid-col-#{$i} {
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet-large) {
+    @for $i from 1 through 12 {
+        .grid-col-offset-#{$i} {
+            margin-left: 100% / 12 * $i;
+        }
+    }
+}

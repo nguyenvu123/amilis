@@ -1,0 +1,64 @@
+.visible-xs, .visible-sm, .visible-md {
+	display: none;
+}
+.btn-read-more {
+	text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+	.btn-read-more-24 {
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: 0.07px;	
+		line-height: 17px;
+		padding: 8px 17px;
+	    // background: $main-color;
+	    background-color: #fdf0eb;
+	    border-radius: 25px;
+	    color: $main-color;
+	    transition: all .3s;
+	    &:hover {
+	    	background-color: $main-color;
+	    	color: white;
+	    }
+	}
+}
+.underline {
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 200px;
+		height: 10px;
+		display: block;
+		background: $color5;
+		-webkit-transform: skew(-20deg) translateX(-50%);
+   		-moz-transform: skew(-20deg) translateX(-50%);
+     	-o-transform: skew(-20deg) translateX(-50%);
+     	transform: skew(-20deg) translateX(-50%);
+	    position: absolute;
+	    left: 50%;
+	    bottom: 2px;
+	    z-index: -1;
+	}
+	&.title {
+		font-size: 37px;
+		font-weight: bold;	
+		letter-spacing: 0.2px;
+		line-height: 47px;
+		text-align: center;
+		color: $main-color;
+		margin-bottom: 30px;
+	}
+	&.left {
+		text-align: left;
+		&:after {
+			left: 0;
+			transform: skew(-20deg) translateX(0%);
+		}
+	}
+	&.underline-short {
+		&:after {
+			width: 130px;
+		}
+	}
+}

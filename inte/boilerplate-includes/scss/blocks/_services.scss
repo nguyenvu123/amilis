@@ -1,0 +1,62 @@
+#services {
+	background: $color6;
+	padding-bottom: 101px;
+    padding-top: 47px;
+	.include-items-services {
+		display: flex;
+    	justify-content: stretch;
+	}
+
+	.description {
+		font-size: 14px;
+	    font-weight: 500;
+	    letter-spacing: 0.08px;
+	    line-height: 16px;
+	    text-align: center;
+	    margin-bottom: 45px;
+	}
+	.services-item {
+		height: 100%;
+		border-radius: 4px;
+    	-webkit-box-shadow: -1px -1px 23px -9px rgba(0,0,0,0.75);
+    	box-shadow: -1px -1px 23px -9px rgba(0,0,0,0.75);
+    	padding-bottom: 65px;
+		h3 {
+			padding: 15px 0;
+			font-size: 21px;
+			font-weight: 500;
+			letter-spacing: 0.11px;
+			line-height: 23px;
+			padding: 15px 15px 15px 20px;
+		    text-align: left;
+		   
+		}
+		.list-unstyled {
+			color: $color2;	
+			font-size: 15px;
+			font-weight: 600;	
+			letter-spacing: 0.08px;	
+			line-height: 24px;
+			text-align: left;
+    		padding-left: 20px;
+		}
+	}
+	.include-link {
+		position: absolute;
+    	right: 35px;
+    	bottom: -33px;
+		a {
+    		padding: 34px;
+		    background: $main-color;
+		    border-radius: 50%;
+		    display: block;
+		    position: relative;
+    		i {
+    			position: absolute;
+			    top: 50%;
+			    right: 50%;
+			    transform: translate(50%, -50%);
+    		}
+		}
+	}
+}

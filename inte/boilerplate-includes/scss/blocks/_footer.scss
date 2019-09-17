@@ -1,0 +1,92 @@
+.site-footer {
+    .top-footer {
+        background: $color2;
+        padding: 88px 0;
+        .right-menu-footer {
+           p {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: flex-start;
+               a {
+                   width: 20%;
+                   margin: 5px;
+                   padding: 0 20px;
+                   position: relative;
+                   font-size: 13px;
+                   font-weight: 500;
+                   letter-spacing: 0.07px;
+                   line-height: 22px;
+                   color: white;
+                   &:after {
+                       content: '';
+                       display: block;
+                       background: $main-color;
+                       height: 100%;
+                       width: 4px;
+                       position: absolute;
+                       top: 50%;
+                       transform: translateY(-50%);
+                       left: -10px;
+                   }
+               }
+           }
+        }
+        .logo-footer {
+            .logo {
+                height: 108px;
+                width: 92px;
+                margin-bottom: 30px;
+            }
+            .include-icon-share {
+                display: flex;
+                margin-bottom: 35px;
+                a {
+                    padding-right: 20px;
+                    img {
+                        width: 20px;
+                        height: 20px;
+
+                    }
+                }
+            }
+
+
+        }
+    }
+    .bottom-footer {
+        .row {
+            display: flex;
+            justify-content: stretch;
+            .col-9 {
+                padding: 18px 0;
+            }
+        }
+        background: $color3;
+        .list-inline {
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
+            li {
+                padding-right: 40px;
+                a {
+                    color: $color4;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 0.07px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+        }
+        .footer-logos {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

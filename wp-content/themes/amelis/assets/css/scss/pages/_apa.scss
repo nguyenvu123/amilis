@@ -1,0 +1,33 @@
+.table-gir {
+    display: flex;
+    flex-direction: column;
+    max-width: 355px;
+    .table-row {
+        background-color: #fafafa;
+        display: flex;
+        &:nth-child(1) {
+            background-color:rgba(216,216,216,1);
+        }
+        &:nth-child(2) {
+            background-color:rgba(216,216,216,.8);
+        }
+        &:nth-child(3) {
+            background-color:rgba(216,216,216,.6);
+        }
+        &:nth-child(4) {
+            background-color:rgba(216,216,216,.4);
+        }
+
+        .table-column {
+            padding: 10px 35px;
+            @media screen and (max-width: $screen-xs-max) {
+                padding: 10px 18px;
+            }
+            &:first-child {
+                margin-right: 20px;
+                position: relative;
+                border-right: 1px solid rgba(0,0,0,.1)
+            }
+        }
+    }
+}

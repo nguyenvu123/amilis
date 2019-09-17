@@ -1,0 +1,22 @@
+.section-hero {
+	min-height: 503px;
+	margin-top: -32px;
+	.overlay {
+		background-image: url('../images/banner-home.png');
+		height: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 503px;
+    	background-size: cover;
+    	.title-banner {
+    		padding-top: 95px;
+		    h1 {
+		    	font-size: 35px;
+			    font-weight: 300;
+			    letter-spacing: 0.09px;
+			    line-height: 39px;
+		    }
+
+    	}
+	}
+}

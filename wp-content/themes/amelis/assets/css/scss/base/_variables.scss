@@ -1,0 +1,86 @@
+// css variables;
+
+:root {
+  --blue-link-color: #1976d2;
+}
+
+
+// Colors
+$color-primary:           #dc3b05;
+$color-secondary:         #434e59;
+
+$color-tertiary:          #E87400;
+
+$color-checkbox:          #FFF5EC;
+$color-form:              #697A8C;
+
+$color-icon: #8594A3;
+
+$color-error: #B71C1C;
+$color-success: #43A047;
+
+
+$color-third: #48d1cc;
+
+$color-dark: #434e59;
+$color-light: #9e9e9e;
+$color-lighter: #a2adb9;
+
+$darken-percentage: 20%;
+
+$color-url: #1976d2;
+
+$header-bg: #fff;
+$footer-bg: #a0b1b9;
+
+
+
+// Typography
+$font-primary: 'IBM Plex Sans', 'Open Sans', Arial, sans-serif;
+$font-secondary: 'IBM Plex Sans', 'Open Sans', Arial, sans-serif;
+
+$font-size-body: 18px;
+$font-size-h1: 36px;
+$font-size-h2: 26px;
+
+
+$text-body: #434e59;
+
+
+// Layout
+$container-width:         1140px;
+$container-wide-width:          1230px;
+
+
+// Extra small screen / phone
+$screen-xs:                  320px !default;
+// Small screen / tablet
+$screen-sm:                  768px !default;
+// Medium screen / desktop
+$screen-md:                  992px !default;
+// Large screen / wide desktop
+$screen-lg:                  1200px !default;
+// Large screen / very wide desktop
+$screen-xl:                  1921px !default;
+// Large screen / wide desktop
+$screen-notebook:            1600px !default;
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
+$screen-lg-max:              ($screen-xl - 1) !default;
+$screen-notebook-max:        ($screen-notebook - 1) !default;
+
+
+// Other settings
+$transition-time:        0.1s;
+$transition-effect:      ease-in-out;
+$opacity:                0.8;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
