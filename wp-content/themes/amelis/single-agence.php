@@ -37,21 +37,9 @@
     }
 ?>
 
-<div class="breadcrumb">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <ul class="list-inline">
-                    <li><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/images/logo-symbol.svg" width="20" alt="Home"></a></li>
-                    <li><a href="/nos-agences">Agences</a></li>
-                    <li><?php _e("Aide à domicile "); echo get_field("custom_breadcrumb") ? get_field("custom_breadcrumb") : get_the_title(); ?></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div class="agence-image visible-xs" style="background-image: url('<?php echo get_field("mobile_agency_img") ? get_field("mobile_agency_img") : "http://placehold.it/450x92" ?>');"></div>
-<section>
+<section class="banner-detail-agence">
     <div class="background-map" style="background-image: url('<?php echo get_field("agency_map_image") ? get_field("agency_map_image") : bloginfo('template_url') . "/assets/images/agence-map.png"?>');">
         <div class="agence-info">
             <div class="container">
@@ -60,10 +48,10 @@
                         <div class="agence-info__part1">
                             <h1>
                             <?php if (get_field("custom_h1")) : ?>
-                            <?php echo get_field("custom_h1") ?>
+                            <?php echo get_field("custom_h1") ?> </br>
                                 <span class="h1-description"><?php echo get_field("custom_agency_name"); echo " "; echo get_field("short_zipcode") ? get_field("short_zipcode") : ""; ?></span>
                             <?php else : ?>
-                            <?php _e("Agence d'aide à domicile à"); ?>
+                            <?php _e("Agence d'aide à domicile à"); ?> </br>
                                 <span class="h1-description"><?php the_title(); echo " "; echo get_field("short_zipcode") ? get_field("short_zipcode") : ""; ?></span>
                             <?php endif; ?>
                             </h1>
@@ -108,28 +96,10 @@
                                 </div>
 
                             </div>
-                            <div class="zones-desservies-container">
-                                <div class="hidden-xs">
-                                    <h2 class="title-orange">Zones Desservies:</h2>
-                                    <p class="zones-desservies"><?php echo get_field('zones_desservies'); ?>
-                                    <?php if ( current_user_can('administrator')) : ?>
-                                        <br><a href="#showMap" id="voirSurLaCarte">Voir sur la carte</a>
-                                    <?php endif; ?></p>
-                                </div>
-                                <div class="visible-xs">
-                                    <div class="select-style toggle-zones">Zones Desservies:</div>
-                                    <div class="zones">
-                                        <p class="zones-desservies"><?php echo get_field('zones_desservies'); ?></p>
-                                            <div id="map-zones" class="map" style="height: 250px"></div>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <div class="h-space-20"></div>
 
-                            <div class="cta-actions">
-                                <a href="<?php echo get_page_link(19); ?>" class="btn btn-primary btn-arrow"><span class="hidden-xs">Demander un </span> devis gratuit</a>
-                                <a href="<?php echo get_field("agency_tarifs_url") ? get_field("agency_tarifs_url") : "#" ?>" class="btn btn-white">Nos tarifs</a>
-                            </div>
+                          
                         </div>
 
                         <div class="h-space-50"></div>
@@ -140,69 +110,100 @@
         </div>
     </div>
 
+
     <div class="container coordonnees" id="agence-coordonnees" style="position: relative;">
+        <div class="row">
+            <div class="col-7">
+                 <div class="breadcrumb">
+                    <ul class="list-inline">
+                        <li><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/images/logo-symbol.svg" width="20" alt="Home"></a></li>
+                        <li><a href="/nos-agences">Agences</a></li>
+                        <li><?php _e("Aide à domicile "); echo get_field("custom_breadcrumb") ? get_field("custom_breadcrumb") : get_the_title(); ?></li>
+                    </ul>
+                </div> 
+                <div class="info-top">
+                     <div class="hidden-xs">
+                        <h2 class="title-orange">Zones Desservies:</h2>
+                        <p class="zones-desservies description-1"><?php echo get_field('zones_desservies'); ?>
+                        <?php if ( current_user_can('administrator')) : ?>
+                            <br><a href="#showMap" id="voirSurLaCarte">Voir sur la carte</a>
+                        <?php endif; ?></p>
+                    </div>
+                     <div class="visible-xs">
+                        <div class="select-style toggle-zones">Zones Desservies:</div>
+                        <div class="zones">
+                            <p class="zones-desservies"><?php echo get_field('zones_desservies'); ?></p>
+                                <div id="map-zones" class="map" style="height: 250px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-actions">
+                    <a href="<?php echo get_page_link(19); ?>" class="btn bg-main-color"><span class="hidden-xs">Demander un </span> devis gratuit</a>
+                    <a href="<?php echo get_field("agency_tarifs_url") ? get_field("agency_tarifs_url") : "#" ?>" class="btn bg-white">Nos tarifs</a>
+                </div> 
+
+            </div>
+              <div class="col-sm-5 col-sm-offset-7 agence-info__sidebar">
+                    <div class="agence-contact hidden-xs">
+                        <div class="include-title">
+                            <h2 class="title">Coordonnées </h2>
+                            <span class="title-description">Amelis groupe Sodexo <?php the_title(); echo " "; echo get_field("short_zipcode") ? get_field("short_zipcode") : ""; ?></span>
+                        </div>
+                        <div class="item">
+                            <h3>Adresse</h3>
+                            <p class="agence-contact__address">
+                                <i class="icon-Location red"></i>
+                                <span class="agence-contact__address__wrapper">
+                                    <span class="agence-contact__address__street"><?php echo get_field('address'); ?> </span><span class="agence-contact__address__zipcode-city"><?php echo get_field('zipcode'); ?> <?php echo get_field('city'); ?></span>
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="item">
+                            <h3>Contact</h3>
+                            <p>
+                                <i class="icon-Phone red"></i>
+                                <a href="tel:<?php echo get_field('phone'); ?>"><span><?php echo get_field('phone'); ?></span></a>
+                            </p>
+
+                            <?php if ( !empty(get_field('email')) ) : ?>
+                                <p>
+                                    <i class="icon-icon-mail"></i>
+                                    <a href="mailto:<?php echo get_field('email'); ?>"><span><?php echo get_field('email'); ?></span></a>
+                                </p>
+                            <?php endif; ?>
+
+
+                            <?php if ( !empty(get_field('fax')) ) : ?>
+                                <p>
+                                    <img src="<?php bloginfo('template_url');?>/assets/images/fax.svg" alt="fax">
+                                    <span><?php echo get_field('fax'); ?></span>
+                                </p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="item">
+                            <h3>Horaires</h3>
+                            <p>
+                                <i class="icon-icon-horaire"></i>
+                                <span><?php echo get_field('horaires'); ?></span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="map" style="width: 100%; height: 260px;" class="single-map"></div>
+                    
+            </div>
+        </div>
+
         <script>
             var zonesHeight = document.querySelector('.zones-desservies-container').getBoundingClientRect().height;
             var negativeTop = -223 - zonesHeight;
             document.getElementById("agence-coordonnees").style.top = negativeTop+"px";
         </script>
-        <div class="row">
-        <div class="col-sm-5 col-sm-offset-7 agence-info__sidebar">
-                <div class="agence-contact hidden-xs">
-                    <h2>Coordonnées
-                    <span class="title-description">Amelis groupe Sodexo <?php the_title(); echo " "; echo get_field("short_zipcode") ? get_field("short_zipcode") : ""; ?></span></h2>
-
-                    <hr>
-
-                    <div class="item">
-                        <h3>Adresse</h3>
-                        <p class="agence-contact__address">
-                            <img src="<?php bloginfo('template_url');?>/assets/images/map.svg" alt="map">
-                            <span class="agence-contact__address__wrapper">
-                                <span class="agence-contact__address__street"><?php echo get_field('address'); ?> </span><span class="agence-contact__address__zipcode-city"><?php echo get_field('zipcode'); ?> <?php echo get_field('city'); ?></span>
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="item">
-                        <h3>Contact</h3>
-                        <p>
-                            <img src="<?php bloginfo('template_url');?>/assets/images/phone.svg" alt="phone">
-                            <a href="tel:<?php echo get_field('phone'); ?>"><span><?php echo get_field('phone'); ?></span></a>
-                        </p>
-
-                        <?php if ( !empty(get_field('email')) ) : ?>
-                            <p>
-                                <img src="<?php bloginfo('template_url');?>/assets/images/mail.svg" alt="">
-                                <a href="mailto:<?php echo get_field('email'); ?>"><span><?php echo get_field('email'); ?></span></a>
-                            </p>
-                        <?php endif; ?>
-
-
-                        <?php if ( !empty(get_field('fax')) ) : ?>
-                            <p>
-                                <img src="<?php bloginfo('template_url');?>/assets/images/fax.svg" alt="fax">
-                                <span><?php echo get_field('fax'); ?></span>
-                            </p>
-                        <?php endif; ?>
-
-
-                    </div>
-
-                    <div class="item">
-                        <h3>Horaires</h3>
-                        <p>
-                            <img src="<?php bloginfo('template_url');?>/assets/images/clock.svg" alt="Horaires">
-                            <span><?php echo get_field('horaires'); ?></span>
-                        </p>
-                    </div>
-
-                    <h3>Trouvez-nous sur la carte</h3>
-
-                    <div id="map" style="width: 100%; height: 260px;" class="single-map"></div>
-                </div>
-            </div>
-        </div>
+ 
+      
     </div> <!-- Coordonnees -->
 </section>
 <section class="agence-info__part2 agence-info">
@@ -211,19 +212,20 @@
             <div class="col-sm-7">
                 <div>
                     <?php if ( !empty($description_name) ) : ?>
-                        <div class="img-holder">
+                        <div class="include-director-info">
                             <img src="<?php echo $description_avatar['url']; ?>" alt="<?php echo $description_name; ?>" width="120" />
+                            <div class="director-info">
+                                <h4><?php echo $description_name; ?></h4>
+                                <span><?php echo $description_position; ?> de l'agence</span>
+                            </div>
                         </div>
-                        <div class="director-info">
-                            <h4><?php echo $description_name; ?></h4>
-                            <span><?php echo $description_position; ?> de l'agence</span>
-                        </div>
+                       
 
                         <div class="clearfix"></div>
                         <div class="h-space-40"></div>
                     <?php endif; ?>
 
-                    <div class="agence-info__description">
+                    <div class="agence-info__description description-1">
                         <?php echo get_field('description'); ?>
                     </div>
                 </div>
@@ -270,13 +272,14 @@
 
 <div class="section agence-prestation" id="prestation">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 text-center">
-                <h2 class="underline centered">Nos Prestations</h2>
+        <div class="row ">
+            <div class="col-md-10 include-title">
+                <h2 class="title-30 left">Nos Prestations</h2>
+                 <h2 class="description">Découvrez l’ensemble de nos services d’<strong>aide à domicile dans le val d’oise (95) </strong> </h2>
             </div>
         </div>
         <div class="row">
-            <div class="text-center">
+            <div class="include-icons">
                 <div class="items-holder services-carousel owl-carousel">
                     <?php
                         $services = get_field('services');
@@ -285,14 +288,14 @@
                                 <div class="prestation-item">
                                     <a href="<?php echo get_permalink( $s->ID ); ?>" class="hover-section"></a>
                                     <div class="img-holder">
-                                        <?php echo the_field("svg_image", $s->ID); ?>
+                                        <i class="icon-top <?php echo get_field('svg_icon', $s->ID); ?>"></i>
                                     </div>
-                                    <h3 class="title"><a href="<?php echo get_permalink( $s->ID ); ?>"><?php echo get_the_title( $s->ID ); ?></a></h3>
+                                    <h3 class="title"><a href="<?php echo get_permalink( $s->ID ); ?>"><?php echo get_the_title( $s->ID ); ?><i class="icon-ArrowLong-1"></i></a> 
+                                    </h3>
                                 </div>
                             <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
-                <p class="description" style="margin-top: 48px"><?php echo get_field("prestation") ? get_field("prestation") : "Découvrez l’ensemble de <a href=\"/nos-services\">nos services</a> d’ aide à domicile au <strong>" .  get_the_title() . "</strong>"; ?></p>
             </div>
         </div>
     </div>
@@ -302,41 +305,42 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 text-center">
-                <h2 class="underline centered">Une Équipe Dédiée</h2>
+                <h2 class="title-30">Une Équipe Dédiée</h2>
                 <div class="h-space-20"></div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
-                    <?php if( $members ): ?>
-                        <div class="row">
-                        <div class="owl-carousel member-carousel">
-                        <?php foreach( $members as $member ): ?>
-                            <?php
+            <?php if( $members ): ?>
+           
+                <div class="member-carousel-customs">
+                <?php foreach( $members as $member ): ?>
+                    <?php
 
-                            $photo = get_field('avatar', $member->ID);
-                            $position = get_field('position', $member->ID);
+                    $photo = get_field('avatar', $member->ID);
+                    $position = get_field('position', $member->ID);
 
-                            ?>
-                                <div class="member-item">
-                                    <div class="img-holder">
-                                        <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" width="120" />
-                                    </div>
-                                    <h4><?php echo get_the_title( $member->ID ); ?></h4>
-                                    <span><?php echo $position; ?></span>
-                                </div>
-                        <?php endforeach; ?>
+                    ?>
+                        <div class="member-item">
+                            <div class="img-holder">
+                                <img src="<?php echo $photo['url']; ?>" alt="<?php echo $photo['alt']; ?>" width="120" />
                             </div>
+                            <h4><?php echo get_the_title( $member->ID ); ?></h4>
+                            <span><?php echo $position; ?></span>
                         </div>
-                    <?php endif; ?>
-            </div>
+                <?php endforeach; ?>
+                </div>
+               
+            <?php endif; ?>
+          
 
-            <div class="col-sm-6 text-center part-of-team">
-                <div class="h-space-40"></div>
+            <div class="part-of-team">
                 <p>Voulez-vous faire partie de notre équipe ?</p>
                 <?php $emploi_link = get_field('rejoignez_nous_cta') ? get_field('rejoignez_nous_cta') : '/emploi/agence-administratif'; ?>
-                <a href="<?php echo $emploi_link; ?>" class="btn btn-primary btn-arrow">Rejoignez-Nous</a>
+                <div class="include-btn">
+                    <a href="<?php echo $emploi_link; ?>" class="btn bg-white">Rejoignez-Nous</a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -346,7 +350,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <h2 class="underline centered">Ils connaissent les services d'Amelis</h2>
+                <h2 class="title-30">Ils connaissent les services d'Amelis</h2>
             </div>
         </div>
         <div class="row">
@@ -383,7 +387,7 @@
 
             // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}],
+            // styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}],
             mapTypeControl: false
         };
 

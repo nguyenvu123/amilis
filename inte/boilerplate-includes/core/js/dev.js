@@ -15,7 +15,7 @@
     $(window).on(
         {
             'load': function () {
-                console.log('The document has finished loading! Total load time : ' + (parseInt(Date.now()) - parseInt(boilerplate_timer)) + 'ms.');
+               
             },
             'resizeend': function () {
                 console.log('Window has been resized!');

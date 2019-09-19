@@ -1,9 +1,33 @@
+.main-content {
+    margin-top: 130px;
+}
+.site-header {
+     z-index: 9999;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    transition: transform .85s cubic-bezier(.475,.425,0,.995),-webkit-transform .85s cubic-bezier(.475,.425,0,.995);
+    &.pin-top{
+      transition: all 1s;
+      position: fixed;
+      background: white; 
+    &.pin{
+        position: fixed;
+         transform: translateY(-175px);
+        background: white;
+    }
+  }
+}
+
 header  {
+   
     .row-top {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; 
         .logo-holder {
             display: inline-block;
+            position: fixed;
         }
         .header__navigation {
         width: 100%;
@@ -89,27 +113,56 @@ header  {
                 margin-top: 60px;
                 .navigation {
                     padding-right: 40px;
+                    position: relative;
                 }
                 position: relative;
+                .search-form {
+                    position: relative;
+                }
                 .search-container-2 {
+                    display: none;
                     position: absolute;
-                    top: 50%;
+                    bottom: -27px;
                     right: 0;
-                    transform: translateY(-50%);
+                  
                     .search-control {
-                        transform: translateX(171px);
-                        visibility: hidden;
+                        border: 1px solid #e0e0e0;
+                        border-radius: 7px;
+                        padding-left: 20px;
+                        height: 30px;
+                        padding-right: 25px;
                     }
                     button {
                         background: transparent;
                         border: none;
                         cursor: pointer;
+                        
 
                     }
                     i {
-                        font-size: 23px;
+                        font-size: 17px;
+                        position: absolute;
+                        right: 9px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
                     }
                 }
+                .icon-search {
+                    &.icon-close {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        i {
+                            cursor: pointer;
+                            font-size: 23px;
+                        }
+                        .close-search  {
+                            display: none;
+                        }
+                    }
+                } 
             }
         }
 

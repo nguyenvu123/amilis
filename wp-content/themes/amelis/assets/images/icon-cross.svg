@@ -1,3 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
-  <path fill="#A2ADB9" fill-rule="evenodd" d="M13.7 12.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3L7 8.4l-5.3 5.3c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4L5.6 7 .3 1.7C-.1 1.3-.1.7.3.3c.4-.4 1-.4 1.4 0L7 5.6 12.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L8.4 7l5.3 5.3z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 56 (101010) - https://sketch.com -->
+    <title>5C8D8E74-7F98-4868-87D3-095DA12C019C</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="PAGES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LISTE-AGENCES" transform="translate(-1269.000000, -371.000000)" fill="#B7C3D0" fill-rule="nonzero">
+            <g id="PopIn" transform="translate(929.000000, 351.000000)">
+                <g id="Group-6" transform="translate(25.000000, 20.000000)">
+                    <g id="01-Electrons/icon-cross" transform="translate(315.000000, -0.000000)">
+                        <path d="M7.62132034,6.20710678 L12.4142136,11 L11,12.4142136 L6.20710678,7.62132034 L1.41421356,12.4142136 L4.53859172e-13,11 L4.79289322,6.20710678 L4.53859172e-13,1.41421356 L1.41421356,-8.8817842e-16 L6.20710678,4.79289322 L11,-8.8817842e-16 L12.4142136,1.41421356 L7.62132034,6.20710678 Z" id="Combined-Shape-Copy"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

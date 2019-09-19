@@ -1,5 +1,6 @@
+ </div>
 </div> <!-- #siteWrapper -->
-<a href="#siteWrapper" class="back-to-top scroll"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/arrow-top.svg") ?></a>
+<!-- <a href="#siteWrapper" class="back-to-top scroll"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/arrow-top.svg") ?></a> -->
 
 <footer class="site-footer">
     <div class="top-footer">

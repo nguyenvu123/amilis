@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?h57rxe');
-  src:  url('../fonts/icomoon.eot?h57rxe#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?h57rxe') format('truetype'),
-    url('../fonts/icomoon.woff?h57rxe') format('woff'),
-    url('../fonts/icomoon.svg?h57rxe#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?976f0l');
+  src:  url('../fonts/icomoon.eot?976f0l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?976f0l') format('truetype'),
+    url('../fonts/icomoon.woff?976f0l') format('woff'),
+    url('../fonts/icomoon.svg?976f0l#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,46 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Courses:before {
+  content: "\e90b";
+  color: #b7c3d0;
+}
+.icon-dame:before {
+  content: "\e90c";
+  color: #b7c3d0;
+}
+.icon-icon-horaire:before {
+  content: "\e90d";
+  color: #f26532;
+}
+.icon-icon-mail:before {
+  content: "\e90e";
+  color: #f26532;
+}
+.icon-Menage:before {
+  content: "\e910";
+  color: #b7c3d0;
+}
+.icon-nuit:before {
+  content: "\e911";
+  color: #b7c3d0;
+}
+.icon-Repas:before {
+  content: "\e912";
+  color: #b7c3d0;
+}
+.icon-arrow-left:before {
+  content: "\e908";
+  color: #dce0e5;
+}
+.icon-arrow-right:before {
+  content: "\e909";
+  color: #dce0e5;
+}
+.icon-arrow-top:before {
+  content: "\e90a";
+  color: #dc3b05;
+}
 .icon-Heart:before {
   content: "\e907";
   color: #fff;

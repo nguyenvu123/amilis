@@ -1,7 +1,7 @@
 const config = {
 
     /* Compiled Bundle destination */
-    output_path : '../wp-content/themes/palm/js/main.js',
+    output_path : '../wp-content/themes/amelis/assets/customs-js/customs.js',
 
     /* Include jQuery in the bundle; true/false */
     jQuery : false,

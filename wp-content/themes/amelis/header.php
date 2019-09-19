@@ -114,11 +114,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 
           </nav>
+          <div class="icon-search icon-close">
+            <i class="icon-Shape"></i>
+             <i class="close-search icon-ArrowLong-1"></i>
+          </div>
           <div class="search-container-2 hidden-xs hidden-sm hidden-md">
 
             <form role="search" method="get" class="search-form" action="<?php bloginfo('url'); ?>/" id="nav-search-input__search-container-2">
               <input type="search" class="form-control search-control" placeholder="Rechercher" value="<?php echo get_search_query(); ?>" name="s" />
-              <button type="submit" class="btn search-mobile"><i class="icon-Shape"></i></button>
+              <button type="submit" class="search-mobile"><i class="icon-Shape"></i></button>
             </form>
           </div>
           </div>
@@ -142,4 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="site-overlay only-md mobile-toggle"></div>
   </header>
   <div class="site-overlay__undernav search-mobile toggle only-md"></div>
+  <div class="main-content">
+    
+ 
 

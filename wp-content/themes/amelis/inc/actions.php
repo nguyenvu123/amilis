@@ -12,6 +12,7 @@
 			// wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js', array('jquery'), '1.0', true);
 			// wp_enqueue_script('maps_api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBHpx78atlJrgAZFhIZvrKoJe1_AdEhGA4', '', '');
 			wp_enqueue_script('headroom', JS_FOLDER . 'headroom.js', array('jquery'), '1.0', true);
+			wp_enqueue_script('customs-js', JS_FOLDER_CUSTOMS . 'customs.js',  true);
 			wp_enqueue_script('jquery.headroom', JS_FOLDER . 'jquery.headroom.js', array('jquery'), '1.0', true);
 
 			wp_enqueue_script('autocomplete', JS_FOLDER . 'jquery.autocomplete.min.js', array('jquery'), '1.0', true);

@@ -1,0 +1,319 @@
+.banner-detail-agence {
+	.breadcrumb {
+		margin: 30px 0;
+	}
+	.background-map {
+		min-height: 233px;
+		background-repeat: no-repeat;
+    	background-size: cover;
+    	background-position: center center;
+	}
+	.agence-info {
+
+		.bg-white {
+			height: 233px;
+    		max-height: 100%;
+		}
+    		
+		.agence-info__part1 {
+			position: absolute;
+		    left: 0;
+		    top: 50%;
+		    transform: translateY(-50%);
+			color: white;
+			font-size: 27px;
+			font-weight: bold;
+			letter-spacing: 0.14px;
+			line-height: 35px;
+			span {
+				color: white;	
+				font-size: 37px;	
+				font-weight: bold;	
+				letter-spacing: 0.2px;
+				line-height: 47px;
+			}
+		}
+	}
+	.info-top {
+		.zones-desservies {
+			padding: 20px 10px 40px 10px;
+		}
+		.title-orange {
+			color: $color2;
+			font-size: 20px;	
+			font-weight: bold;	
+			letter-spacing: 0.11px;
+			line-height: 26px;
+		}
+	}
+	
+	.agence-info__sidebar {
+		top: -40px;
+		background: white;
+		z-index: 1;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		box-shadow: 0 20px 40px 0 rgba(113,112,112,0.15);
+		.agence-contact {
+			padding: 50px 28px 10px 30px;
+			.include-title {
+				margin-bottom: 10px;
+				.title {
+					color: $color2;	
+					font-size: 27px;
+					font-weight: bold;
+					line-height: 35px;
+				}
+				.title-description {
+					color: $color8;
+					font-size: 17px;
+					font-weight: bold;
+					line-height: 22px;
+				}
+			}
+			
+			.item {
+				padding: 30px 10px;
+				h3 {
+					color: $color2;	
+					font-size: 17px;	
+					font-weight: 500;	
+					letter-spacing: 0.09px;
+					line-height: 20px;
+					padding-bottom: 10px;
+				}
+				p {
+					display: flex;
+					color: #828C96;
+					font-size: 17px;	
+					font-weight: 600;	
+					line-height: 24px;
+					display: flex;
+    				align-items: center;
+    				i {
+    					padding-right: 15px;
+    				}
+    				a {
+    					span {
+    						border-bottom: 1px solid;
+    					}
+    					
+    				}
+				}
+			}
+		}
+		
+	}
+}
+.agence-info__part2 { 
+	background: $color6;
+	margin: 65px 0;
+	padding: 30px 0;
+	.include-director-info {
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		img {
+			width: 55px;
+    		border-radius: 50%;
+		}
+		.director-info {
+			padding-left: 20px;
+			h4 {
+				color: $main-color;
+				font-size: 16px;
+				font-weight: 500;
+				letter-spacing: 0.09px;	
+				line-height: 18px;
+			}
+			span {
+				color: $color2;	
+				font-family: Clan-Medium;
+				font-size: 14px;
+				font-weight: 500;
+				letter-spacing: 0.08px;	
+				line-height: 16px;
+			}
+		}
+
+	}
+}
+.section {
+	&.agence-prestation {
+		.include-title {
+			margin-bottom: 40px;
+			.title-30 {
+				margin-bottom: 15px;
+			}
+			.description {
+				color: $color2;	
+				font-size: 17px;	
+				font-weight: 600;
+				letter-spacing: 0.09px;
+				line-height: 27px;	
+			}
+		}
+		
+		.include-icons { 
+			.owl-stage-outer {
+				.owl-stage {
+
+					.owl-item {
+						width: 25% !important;
+						display: inline-block;
+						margin-bottom: 30px;
+						.title {
+							padding-right: 44px;
+    						
+							a {
+								position: relative;
+								color: $color2;	
+								font-size: 15px;	
+								font-weight: 500;
+								line-height: 19px;
+
+								&:hover{
+									i {
+										right: -40px; 
+									}
+								}
+								i {
+									transition: all .4s;
+									right: -30px;
+									font-size: 11px;
+								    position: absolute;
+								    top: 50%;
+								    transform: translateY(-50%);
+								}
+							}
+						}
+						.img-holder {
+							margin-bottom: 10px;
+							i {
+								font-size: 52px;
+								border-left: 3px solid $main-color;
+	    						padding-left: 15px;
+	    						margin-bottom: 10px;
+
+							}
+						}
+						
+					}
+				}
+			}
+		}
+		
+	}
+} 
+
+.section {
+	&.agence-equipe {
+		background: $color6;
+		padding: 50px 0;
+		.member-carousel-customs {
+			margin-bottom: 65px;
+		}
+		.slick-dots {
+			bottom: -35px;
+			button {
+				&:before {
+					color: $color9;
+				}
+			}
+			.slick-active {
+				button {
+					&:before {
+						color: $main-color;
+					}
+				}
+			}
+		}
+		.member-item {
+			text-align: center;
+			h4 {
+				color: $color2;
+				font-size: 16px;	
+				font-weight: 500;
+				line-height: 18px;
+			}
+			span {
+				color: $color4;	
+				font-size: 14px;	
+				font-weight: 500;	
+				line-height: 16px;
+			}
+			img {
+				width: 117px;
+    			border-radius: 50%;
+    			margin: 0 auto;
+			}
+		}
+		.part-of-team {
+			width: 455px;
+    		margin: 0 auto;
+    		background: $main-color;
+    		display: flex;
+    		min-height: 95px;
+    		align-items: center;
+    		.include-btn {
+				width: 256px;
+	    		margin-right: 20px;
+	    		max-width: 100%;
+	    		a {
+	    			display: block;
+	    			text-align: center;
+	    		}
+			}
+    		p {
+    			color: white;
+    			font-size: 17px;
+    			font-weight: 600;
+    			letter-spacing: 0.09px;
+    			line-height: 27px;
+    			padding: 30px;
+    		}
+		}
+	
+	}
+}
+.section {
+	&.agence-testimonials {
+		padding: 83px 0;
+		.title-30 {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		.testimonials {
+			max-width: 825px;
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    width: 100%;
+		    justify-content: stretch;
+		    margin: 0 auto;
+			.include-item {
+				width: 49%;
+				display: inline-block;
+				&:first-child {
+					padding-right: 15px;
+				}
+				&:last-child {
+					padding-left: 15px;
+				}
+				.item {
+					height: 100%;
+					padding: 30px 20px 40px 25px;
+					box-shadow: 0 20px 40px 0 rgba(113,112,112,0.15);
+					background: white;
+					img {
+						width: 40px;
+					}
+					.testimonial-person {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+	}
+} 

@@ -1,0 +1,214 @@
+.section-amelis-sur-la-carte {
+	position: relative;
+	.list-items {
+		position: absolute;
+    	width: 425px;
+    	z-index: 2;
+    	top: 60px;
+
+		.top-list {
+			background: white;
+			padding: 40px;
+		
+			.title {
+				color: $color2;
+				font-size: 22px;
+				font-weight: bold;	
+				line-height: 33px;
+				padding-bottom: 10px;
+			}
+			span {
+					color: $color4;
+					font-size: 17px;
+					font-weight: 600;
+					letter-spacing: 0.09px;	
+					line-height: 27px;
+			}
+		}
+
+    	.items {
+    		overflow: auto;
+    		height: 435px;
+    		padding: 0 40px;
+    		background: $color6;
+
+			&::-webkit-scrollbar {
+				width: 13px;
+				background-color: #e5e5e5;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				border-radius: 10px;
+				background-color: #c0c0c0;
+			}
+
+    		.agency-card {
+    			&.text-left {
+    				border-bottom: 1px solid #E2E7ED;
+    				padding-bottom: 20px;
+    				padding-top: 25px;
+    			}
+    		}
+    		
+    	
+    	}
+    	.agency-entity__title {
+    		margin-bottom: 10px;
+    		display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.icon-right {
+				width: 28px;
+			    height: 28px;
+				i {
+					font-size: 10px;
+				}
+			}
+			
+    		a {
+    			color: $main-color;
+    			font-size: 18px;
+    			font-weight: 500;
+    			letter-spacing: 0.1px;
+    			line-height: 20px;
+    		}
+    	}
+    	.agency-entity__action-icon {
+    		margin-bottom: 10px;
+    		i{
+    			font-size: 18px;
+    			padding-right: 10px;
+    			&:before {
+    				color: $color4;
+    			}
+    		}
+    		a {
+    			color: $color4;		
+    			font-size: 17px;
+    			font-weight: 600;	
+    			line-height: 27px;
+    			
+    			span {
+    				border-bottom: 1px solid;
+    			}
+    		}
+    	}
+	}
+
+
+	.include-form-search {
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		top: 65px;
+		.code-postal-search {
+			width: 747px;
+    		max-width: 100%;
+    		.form-group {
+    			position: relative;
+    			i {
+    				position: absolute;
+				    top: 50%;
+				    transform: translateY(-50%);
+				    &.icon-local {
+				    	left: 25px;
+				    	font-size: 20px;
+				    }
+				    &.icon-right {
+				    	right: 30px;
+				    }
+    			}
+    		}
+    		input {
+    		
+    			width: 100%;
+    			background: white;
+    			padding: 25px 0 25px 55px;
+    			border-radius: 4px;
+    			color: $color7;
+			    font-size: 16px;
+			    letter-spacing: 0.09px;
+			    line-height: 18px;
+
+    		}
+		}
+	}
+
+	#map {
+		min-height: 750px;
+
+		.map-popup {
+			position: relative;
+			.firstHeading {
+				padding-bottom: 20px;
+				a {
+					color: $main-color;	
+					font-size: 18px;
+					font-weight: 500;
+					letter-spacing: 0.1px;
+					line-height: 20px;
+				}
+			}
+
+			#bodyContent {
+				p {
+					color: $color4;	
+					font-size: 17px;
+					font-weight: 600;
+					line-height: 27px;
+					padding-bottom: 5px;
+					strong {
+						color: black;
+					}
+					span {
+						border-bottom: 1px solid;
+					}
+					i {
+						padding-right: 10px;
+						&:before {
+						 	color: #828C96;
+						}
+					}
+				}
+			}
+			.btn-next {
+				position: absolute;
+				right: 0;
+    			bottom: -55px;
+				a {
+					width: 50px;
+					height: 50px;
+				}
+			
+					
+				
+			}
+		}
+		.gm-style  {
+			.gm-style-iw-c {
+				padding: 35px;
+				overflow: inherit !important;
+			}
+			.gm-style-iw-d {
+				padding-bottom: 30px;
+				overflow: inherit !important;
+				padding-right: 35px;
+			}
+			.gm-ui-hover-effect {
+				top: 11px !important;
+    			right: 13px !important;
+			}
+		}
+		.gm-ui-hover-effect {
+			background-image: url('../images/icon-cross.svg') !important;
+			width: 20px !important;
+			height: 20px !important;
+			background-position: center center !important;
+			background-repeat: no-repeat !important;
+			img {
+				display: none !important;
+			}
+		}
+	}
+	
+}

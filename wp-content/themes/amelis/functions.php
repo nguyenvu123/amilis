@@ -33,6 +33,7 @@
 	define ('CSS_FOLDER', get_template_directory_uri().'/assets/css/');
 	define ('CSS_FOLDER_CUSTOMS', get_template_directory_uri().'/assets/customs-css/');
 	define ('JS_FOLDER', get_template_directory_uri().'/assets/js/');
+	define ('JS_FOLDER_CUSTOMS', get_template_directory_uri().'/assets/customs-js/');
 	define ('IMG_FOLDER', get_template_directory_uri().'/assets/images/');
 
 	// Define admin emails array

@@ -9,78 +9,79 @@
         'post_parent' => 0
     );
     $agences = get_posts( $args );
+    $count = count($agences);
 ?>
 
 <div class="page-trouver-une-agence ">
 
-<div class="breadcrumb">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <ul class="list-inline">
-                    <li><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/images/logo-symbol.svg" width="20" alt="Home"></a></li>
-                    <li>Agences</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section class="section-hero">
-<div class="gray-overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <h1 class="text-center ">
-                Trouvez une agence d'aide à <br class="visible-lg"> domicile <span class="hidden-xs"> près de chez vous</span></h1>
-                <div class="code-postal-search">
-                    <div class="code-postal-search__input">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
-                            <div class="form-group">
-                                <input id="randomcp_field_name" type="text" pattern="[0-9]*" inputmode="numeric" onkeydown="return FilterInput(event)" min="10000" placeholder="Code postal de la personne aidée" autocomplete="false" required="required">
-                                <input type="text" placeholder="" id="randomcp_field_name_text_with_location" style="display: none">
-
-                                <input type="hidden" class="redirectToAgence" value="" id="code_postal_hidden">
-
-
-                                <div class="icon"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/icon-search.svg") ?></div>
-
-                                <div style="display: none; font-size: 14px; line-height: 1.4; padding: 12px 18px; background: rgba(255,255,255,0.5); font-weight: 500;" class="agence-not-found-trouvez"></div>
-
-                            </div>
-                                <div id="useOnlyNumbers" style="color: #B71C1C; font-size: 14px; margin-top: 8px; display: none;"></div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="section section-amelis-sur-la-carte">
-    <h2 class="underline centered" id="trouverTitle">Amelis sur la carte</h2>
-
     <div class="map-holder">
+        <div class="container container-wide">
+            <div class="row">
+                <div class="col-5">
+                    <div class="list-items">
+                        <div class="top-list">
+                            <div class="breadcrumb">
+                                <ul class="list-inline">
+                                    <li><a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/assets/images/logo-symbol.svg" width="20" alt="Home"></a></li>
+                                    <li><i class="icon-arrow-right"></i></li>
+                                    <li>Agences</li>
+                                </ul>
+                            </div> 
+                            <h1 class="title">
+                                Trouvez une agence d'aide à  domicile près de chez vous </h1>
+                                <span><?php echo $count; ?> agences d’aides à domicile</span>
+                            </div>
+                            <div class="items">
+                                <?php foreach ($agences as $agency): ?>
+                                    <div class="agency-card agency-entity text-left">
+                                        <h3 class="agency-entity__title">
+                                            <a href="<?php echo get_page_link($agency->ID) ?>"><?php echo $agency->post_title; ?></a>
+                                            <a class="icon-right circle" href="<?php echo get_page_link($agency->ID) ?>"><i class="icon-ArrowLong-2 white"></i></a>
+                                        </h3>
 
-            <div class="container container-wide">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="select-style hidden-xs">
-                            <select name="agency-selection" class="redirectToAgence" id="agency_selection_map">
-                                <option value="0" selected>Sélectionnez une agence</option>
-                                <?php foreach ($agences as $a) : ?>
-                                    <option value="<?php echo get_field('zipcode', $a->ID) ?>"><?php echo $a->post_title; ?></option>
+                                        <div class="agency-entity__actions">
+                                            <div class="agency-entity__icons">
+                                                <div class="agency-entity__action-icon">
+                                                    <a href="tel:<?php echo get_field('phone', $agency->ID); ?>"><i class="icon-Phone"></i><span><?php echo get_field('phone', $agency->ID); ?></span></a> 
+                                                </div>
+                                                <div class="agency-entity__action-icon">
+                                                <a href="mailto:<?php echo get_field('email', $agency->ID); ?>"><i class="icon-Phone"></i><span><?php echo get_field('email', $agency->ID); ?></span></a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 <?php endforeach; ?>
-                            </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7 include-form-search">
+                        <div class="code-postal-search">
+                            <div class="code-postal-search__input">
+                                <div class="form-group">
+                                    <input id="randomcp_field_name" type="text" pattern="[0-9]*" inputmode="numeric" onkeydown="return FilterInput(event)" min="10000" placeholder="Code postal de la personne aidée" autocomplete="false" required="required">
+                                    <input type="text" placeholder="" id="randomcp_field_name_text_with_location" style="display: none">
+
+                                    <input type="hidden" class="redirectToAgence" value="" id="code_postal_hidden">
+
+
+                                    <i class="icon-local icon-Location"></i>
+                                    <i class="icon-right icon-ArrowLong-1"></i>
+                                    
+
+                                    <div style="display: none; font-size: 14px; line-height: 1.4; padding: 12px 18px; background: rgba(255,255,255,0.5); font-weight: 500;" class="agence-not-found-trouvez"></div>
+                                </div>
+                                <div id="useOnlyNumbers" style="color: #B71C1C; font-size: 14px; margin-top: 8px; display: none;">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <div id="map" style="width: 100%; height: 620px;"></div>
+        <div id="map" style="width: 100%;"></div>
         <div class="visible-xs text-center">
         <div class="container">
         <div class="row">
@@ -103,30 +104,7 @@
         </div>
 
             </div>
-        <div class="section-agencies">
-            <h2 class="underline centered" id="">Nos Agences</h2>
-            <div class="container">
-            <div class="row">
-                <?php foreach ($agences as $agency): ?>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="agency-card agency-entity text-left">
-                        <h3 class="agency-entity__title"><a href="<?php echo get_page_link($agency->ID) ?>"><?php echo $agency->post_title; ?></a></h3>
-                        <div class="agency-entity__actions">
-                        <div class="agency-entity__icons">
-                            <div class="agency-entity__action-icon">
-                                <a href="tel:<?php echo get_field('phone', $agency->ID); ?>"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/icon-call.svg") ?></a>
-                            </div>
-                            <div class="agency-entity__action-icon">
-                                <a href="mailto:<?php echo get_field('email', $agency->ID); ?>"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/mail.svg") ?></a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <?php endforeach; ?>
-            </div> <!-- .row -->
-                </div> <!-- .container -->
-        </div> <!-- .section-agencies -->
+       
     </div>
 
     <div id="nothing-to-show" style="display: none"></div>
@@ -199,13 +177,12 @@
         var mapOptions = {
             // How zoomed in you want the map to start at (always required)
             zoom: 6,
+            mapTypeId: 'roadmap',
+
 
             // The latitude and longitude to center the map (always required)
             center: new google.maps.LatLng(46.293948, 2.256196),
 
-            // How you would like to style the map.
-            // This is where you would paste any style found on Snazzy Maps.
-            styles: [{"featureType":"administrative.locality","elementType":"all","stylers":[{"hue":"#2c2e33"},{"saturation":7},{"lightness":19},{"visibility":"on"}]},{"featureType":"landscape","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"simplified"}]},{"featureType":"poi","elementType":"all","stylers":[{"hue":"#ffffff"},{"saturation":-100},{"lightness":100},{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":31},{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"hue":"#bbc0c4"},{"saturation":-93},{"lightness":-2},{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"hue":"#e9ebed"},{"saturation":-90},{"lightness":-8},{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":10},{"lightness":69},{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#e9ebed"},{"saturation":-78},{"lightness":67},{"visibility":"simplified"}]}],
             mapTypeControl: false
         };
 
@@ -254,8 +231,11 @@
             '<h4 class="firstHeading"><a href="<?php echo get_the_permalink($a->ID); ?>">' + '<?php echo $a->post_title; ?>' + '</a></h1>'+
             '<div id="bodyContent">'+
             '<p><strong><?php echo get_field('position', $dir[0]->ID); ?></strong> <?php echo $dir[0]->post_title; ?></p>'+
-            '<p><img src="<?php bloginfo('template_url');?>/assets/images/phone.svg" alt="phone"><a href="tel:<?php echo str_replace(' ', '', get_field('phone', $a->ID)); ?>"><span><?php echo get_field('phone', $a->ID); ?></a></p>'+
-            '<p><img src="<?php bloginfo('template_url');?>/assets/images/mail.svg" alt="mail"><a href="mailto:<?php echo get_field('email', $a->ID);  ?>"><span><?php echo get_field('email', $a->ID); ?></a></p>'+
+            '<p><i class="icon-Phone"></i><a href="tel:<?php echo str_replace(' ', '', get_field('phone', $a->ID)); ?>"><span><?php echo get_field('phone', $a->ID); ?></a></p>'+
+            '<p><i class="icon-Phone"></i><a href="mailto:<?php echo get_field('email', $a->ID);  ?>"><span><?php echo get_field('email', $a->ID); ?></a></p>'+
+            '</div>'+
+            '<div class="btn-next">'+
+                '<a class="icon-right circle" href="<?php echo get_the_permalink($a->ID); ?>"><i class="icon-ArrowLong-2 white"></i></a>'+
             '</div>'+
             '</div>';
 
@@ -272,6 +252,10 @@
             marker_<?php echo $a->ID; ?>.addListener('click', function() {
                 infowindow.setContent(contentString_<?php echo $a->ID; ?>);
                 infowindow.open(map, marker_<?php echo $a->ID; ?>);
+                map.setCenter(this.getPosition()); 
+               
+
+
             });
         <?php endforeach; ?>
     }
