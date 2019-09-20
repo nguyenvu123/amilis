@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?976f0l');
-  src:  url('../fonts/icomoon.eot?976f0l#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?976f0l') format('truetype'),
-    url('../fonts/icomoon.woff?976f0l') format('woff'),
-    url('../fonts/icomoon.svg?976f0l#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?dxd5nt');
+  src:  url('../fonts/icomoon.eot?dxd5nt#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dxd5nt') format('truetype'),
+    url('../fonts/icomoon.woff?dxd5nt') format('woff'),
+    url('../fonts/icomoon.svg?dxd5nt#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Menu-mobile:before {
+  content: "\e916";
+  color: #434e59;
+}
+.icon-icon-cross:before {
+  content: "\e915";
+  color: #b7c3d0;
+}
 .icon-Courses:before {
   content: "\e90b";
   color: #b7c3d0;
@@ -40,6 +48,10 @@
 .icon-icon-mail:before {
   content: "\e90e";
   color: #f26532;
+}
+.icon-Mask:before {
+  content: "\e90f";
+  color: #e65723;
 }
 .icon-Menage:before {
   content: "\e910";
@@ -75,6 +87,14 @@
 }
 .icon-Play:before {
   content: "\e905";
+  color: #fff;
+}
+.icon-IconList:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-IconMapMobile:before {
+  content: "\e914";
   color: #fff;
 }
 .icon-ArrowLong-2:before {

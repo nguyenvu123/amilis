@@ -21,6 +21,7 @@
 }
 
 header  {
+
    
     .row-top {
         display: flex;
@@ -30,16 +31,68 @@ header  {
             position: fixed;
         }
         .header__navigation {
-        width: 100%;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background: white;
+            transform: translateX(-100%);
+            transition: all 1s;
+            overflow: auto;
+            z-index: 99999;
+            @media screen and (min-width: $mobile-small){ 
+               transform: initial;
+               z-index: 1;
+               overflow: unset;
+            }
+            &.open_menu_mobile {
+                transform: translateX(0);
+            }
+            
+            .icon_close-menu {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                display: block;
+                @media screen and (min-width: $mobile-small){ 
+                    display: none;
+                }  
+            }
+            .logo-mobile {
+                display: block;
+                @media screen and (min-width: $mobile-small){ 
+                    display: none;
+                }  
+                width: 82px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: $mobile-small){ 
+                position: relative;
+                height: auto;
+                background: transparent;
+            }
+       
             #menu-primary-menu {
-                display: flex;
-                justify-content: flex-end;
-                 li {
+                display: block;
+                @media screen and (min-width: $mobile-small){ 
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                
+                li {
+                   
+                    border-top: 1px solid #b0b0b0;
+                    @media screen and (min-width: $mobile-small){  
+                        border-top: transparent;
+                    }
                     list-style: none;
-                     padding: 10px 10px;
-                     cursor: pointer;
+                    padding: 20px 10px;
+                    cursor: pointer;
+                    @media screen and (min-width: $mobile-small){  
+                        padding: 10px 10px;
+                    }
 
-                     a {
+                    a {
                          font-size: 16px;
                          font-weight: 500;
                          line-height: 18px;
@@ -51,57 +104,95 @@ header  {
                          }
 
                      }
-                     &:hover {
-
-
-                         .dropdown-wrapper {
-                             display: block;
-                             min-width: 250px;
-                             left: 50%;
-                             transform: translateX(-50%);
-                             .dropdown-menu {
-                                 &:before {
-                                     content: "";
-                                     position: absolute;
-                                     width: 30px;
-                                     height: 30px;
-                                     background-color: #f7f7f7;
-                                     top: 7px;
-                                     left: 50%;
-                                     border-radius: 3px;
-                                     transform: rotate(45deg) translateX(-50%);
-                                 }
-                             }
-                         }
-                     }
-                 }
+                     @media screen and (min-width: $mobile-small){  
+                        &:hover {
+                            .dropdown-wrapper {
+                                display: block;
+                                min-width: 250px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                .dropdown-menu {
+                                    &:before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 30px;
+                                        height: 30px;
+                                        background-color: #f7f7f7;
+                                        top: 7px;
+                                        left: 50%;
+                                        border-radius: 3px;
+                                        transform: rotate(45deg) translateX(-50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 > li {
                     position: relative;
-                    //&:hover {
-                    //    &:after {
-                    //        content: '';
-                    //        width:0px;
-                    //        height:0px;
-                    //        border-left:50px solid transparent;
-                    //        border-right:50px solid transparent;
-                    //        border-top:50px solid #2f2f2f;
-                    //    }
-                    //}
+                    padding-left: 35px;
+                    text-align: left;
+                    background: #e2e2e2;
+                    @media screen and (min-width: $mobile-small){ 
+                        padding-right: 10px;
+                        background: transparent;
+                        border-bottom: transparent;
+                    }
+                    a {
+                        display: block;
+                    }
+
+                    &.menu-item-has-children {
+                        > a {
+                            position: relative;
+                            &:after {
+                                content: "";
+                                display: inline-block;
+                                font-style: normal;
+                                width: 8px !important;
+                                height: 8px !important;
+                                border-right: 1px solid #666;
+                                border-top: 1px solid #666;
+                                transform: rotate(135deg);
+                                position: absolute;
+                                transform: rotate(135deg) translateY(50%);
+                                position: absolute;
+                                right: 20px;
+                                top: 50%;
+                                @media screen and (min-width: $mobile-small){ 
+                                    content: none;
+                                }
+                            }
+                        }
+                    }  
+                    &.open {
+                        padding-bottom: 0;
+                    }
                 }
 
             }
             .dropdown-wrapper {
                 display: none; //submemu none tạm thời
-                position: absolute;
-                background-color: #f7f7f7;
-                margin-top: 10px;
+                position: relative;
+                margin-top: 20px;
                 z-index: 1;
-                &:hover {
-                    display: block;
-
+                @media screen and (min-width: $mobile-small){ 
+                    position: absolute;
+                    background-color: #f7f7f7;
+                    margin-top: 10px;
+                }
+                
+                
+                @media screen and (min-width: $mobile-small){ 
+                    &:hover {
+                        display: block;
+                    }
                 }
                 .dropdown-menu {
-                    padding: 15px 20px;
+                    padding: 0px 45px 0 20px;
+                    @media screen and (min-width: $mobile-small) {  
+                        padding: 15px 20px;
+                    }
                     border-radius: 10px;
                     li {
                         text-align: left;
@@ -112,8 +203,11 @@ header  {
             .include-menu {
                 margin-top: 60px;
                 .navigation {
-                    padding-right: 40px;
+                    padding-right: 0;
                     position: relative;
+                    @media screen and (min-width: $mobile-small){  
+                        padding-right: 40px;
+                    }
                 }
                 position: relative;
                 .search-form {
@@ -136,8 +230,6 @@ header  {
                         background: transparent;
                         border: none;
                         cursor: pointer;
-                        
-
                     }
                     i {
                         font-size: 17px;
@@ -154,9 +246,16 @@ header  {
                         right: 0;
                         top: 50%;
                         transform: translateY(-50%);
+                        @media screen and (min-width: $mobile-small){  
+                            display: block;
+                        }
                         i {
                             cursor: pointer;
                             font-size: 23px;
+                            display: none;
+                            @media screen and (min-width: $mobile-small){  
+                                display: block;
+                            }
                         }
                         .close-search  {
                             display: none;
@@ -165,9 +264,42 @@ header  {
                 } 
             }
         }
+        .header-mobile {
+            min-height: 100px;
+            width: 100%;
+            position: relative;
+            .include-items-mobile {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                // .include-items-mobile {
+                //     display: flex;
+                // }
+                .icon-Menu-mobile {
+                    height: 21px;
+                    font-size: 21px;
+                    padding-left: 20px;
+                }
+                .icon-Shape {
+                    font-size: 23px;
+                }
+            }
+             .search-container-2 {
+                position: absolute;
+                right: 50%;
+                transform: translateX(50%);
+                bottom: 0;
+            }
+        }
 
     }
     .phone-header {
+        display: none;
+        @media screen and (min-width: $mobile-small){  
+            display: block;
+        }
         background: $main-color;
         position: absolute;
         top: 0;

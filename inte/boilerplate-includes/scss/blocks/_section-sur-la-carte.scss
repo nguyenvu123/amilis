@@ -1,14 +1,61 @@
 .section-amelis-sur-la-carte {
 	position: relative;
+	.include-list-items {
+		padding-left: 0;
+		@media screen and (min-width: $mobile-small){  
+			padding-left: 15px;
+		}
+	}
 	.list-items {
-		position: absolute;
-    	width: 425px;
-    	z-index: 2;
-    	top: 60px;
-
+		position: relative;
+		width: 100vw;
+		@media screen and (min-width: $mobile-small){ 
+			position: absolute;
+			display: block;
+			width: 425px;
+    		z-index: 2;
+    		top: 60px;
+		}
+		
 		.top-list {
 			background: white;
 			padding: 40px;
+
+			.icon-map-mobile {
+				display: block;
+				@media screen and (min-width: $mobile-small){ 
+					display: none;
+				}
+				padding-top: 30px;
+				
+				.show-list, .show-map {
+					background: $main-color;
+				    padding: 10px 20px;
+				    border-radius: 22px;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
+    				width: 120px;
+    				height: 43px;
+					span {
+						 font-size: 13px;
+				    	font-weight: 600;
+				   		letter-spacing: 0.07px;
+				    	line-height: 17px;
+				    	color: white;
+					}
+					
+
+					i {
+						font-size: 20px;
+						padding-right: 10px;
+					}
+				}
+				.show-map {
+					display: none;
+				}
+				
+			}
 		
 			.title {
 				color: $color2;
@@ -27,10 +74,20 @@
 		}
 
     	.items {
+    		display: none;
     		overflow: auto;
     		height: 435px;
     		padding: 0 40px;
     		background: $color6;
+    		position: absolute;
+    		width: 100%;
+    		z-index: 2;
+    		@media screen and (min-width: $mobile-small){ 
+    			display: block;
+    			position: relative;
+    			width: auto;
+    		}
+    		
 
 			&::-webkit-scrollbar {
 				width: 13px;
@@ -100,7 +157,11 @@
 		position: absolute;
 		right: 0;
 		z-index: 1;
-		top: 65px;
+		top: 314px;
+		@media screen and (min-width: $mobile-small) {  
+			top: 65px;
+		}
+		
 		.code-postal-search {
 			width: 747px;
     		max-width: 100%;

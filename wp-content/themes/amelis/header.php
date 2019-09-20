@@ -62,15 +62,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container container-wide">
 
       <div class="row row-top">
-        <div class="visible-xs visible-sm visible-md" style="margin-left: 16px">
-          <a href="#" class="toggle-menu btn mobile-toggle">Menu</a>
-        </div>
+       
         <div class="logo-holder">
-            <a href="<?php bloginfo('url');?>" class="logo">
+            <a href="<?php bloginfo('url');?>" class="logo desktop">
               <span class="logo-amelis-svg">
                 <?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/main-logo.svg")?>
               </span>
             </a>
+            <a href="<?php bloginfo('url');?>" class="logo mobile">
+              <span class="logo-amelis-svg">
+                <?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/logo-mobile.svg")?>
+              </span>
+            </a>
+
+
+            
         </div>
         <div class="btn search-mobile toggle visible-xs visible-sm visible-md"><?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/icon-search.svg") ?></div>
         <div class="nav-search-input visible-xs visible-sm visible-md">
@@ -80,6 +86,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </form>
         </div>
         <div class="text-right header__navigation">
+
+          <div class="icon_close-menu">
+            <i class="icon-icon-cross"></i>
+          </div>
+          
+          
+          <a href="<?php bloginfo('url');?>" class="logo-mobile">
+              <span class="logo-amelis-svg">
+                <?php echo file_get_contents(get_bloginfo('template_url') . "/assets/images/main-logo.svg")?>
+              </span>
+            </a>
           <div class="include-menu">
               <nav class="navigation">
             <div class="text-center visible-xs visible-sm visible-md">
@@ -114,9 +131,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 
                 
           </nav>
-          <div class="icon-search icon-close">
+         <div class="icon-search icon-close">
             <i class="icon-Shape"></i>
-             <i class="close-search icon-ArrowLong-1"></i>
+            <i class="close-search icon-icon-cross"></i>
           </div>
           <div class="search-container-2 hidden-xs hidden-sm hidden-md">
 
@@ -128,6 +145,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
 
+        <div class="mobile header-mobile">
+          <div class="include-items-mobile">
+
+             <div class="icon-search icon-close">
+            <i class="icon-Shape"></i>
+            <i class="close-search icon-icon-cross"></i>
+          </div>
+
+            <div class="mobile  icon_menu">
+              <i class="icon-Menu-mobile"></i>
+            </div>
+          </div>
+
+            <div class="search-container-2 hidden-xs hidden-sm hidden-md">
+
+            <form role="search" method="get" class="search-form" action="<?php bloginfo('url'); ?>/" id="nav-search-input__search-container-2">
+              <input type="search" class="form-control search-control" placeholder="Rechercher" value="<?php echo get_search_query(); ?>" name="s" />
+              <button type="submit" class="search-mobile"><i class="icon-Shape"></i></button>
+            </form>
+          </div>
+          
+        </div>
 
       </div>
     

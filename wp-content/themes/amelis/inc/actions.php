@@ -6,7 +6,7 @@
 			wp_register_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,500,600,700&amp;subset=latin-ext' );
 
 			wp_enqueue_style('google_fonts');
-			// wp_enqueue_style('main');
+			 //wp_enqueue_style('main');
 
 			wp_enqueue_script( 'jquery');
 			// wp_enqueue_script('jquery-ui', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js', array('jquery'), '1.0', true);

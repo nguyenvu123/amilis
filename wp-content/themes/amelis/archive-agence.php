@@ -19,7 +19,7 @@
     <div class="map-holder">
         <div class="container container-wide">
             <div class="row">
-                <div class="col-5">
+                <div class="col-5 include-list-items">
                     <div class="list-items">
                         <div class="top-list">
                             <div class="breadcrumb">
@@ -32,6 +32,18 @@
                             <h1 class="title">
                                 Trouvez une agence d'aide à  domicile près de chez vous </h1>
                                 <span><?php echo $count; ?> agences d’aides à domicile</span>
+                                <div class="icon-map-mobile">
+                                    <div class="show-map">
+                                        <i class="icon-IconMapMobile"></i>
+                                        <span>CARTE</span>
+                                    </div>
+                                    <div class="show-list">
+                                        <i class="icon-IconList"></i>
+                                        <span>LISTE</span>
+                                    </div>
+                                   
+
+                                </div>
                             </div>
                             <div class="items">
                                 <?php foreach ($agences as $agency): ?>
